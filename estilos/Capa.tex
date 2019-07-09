@@ -1,0 +1,50 @@
+% *************** Title page ****************
+% *** utiliza variáveis cujos valores são ***
+% ***  definidas no documento principal   *** 
+
+\pagestyle{empty} \sffamily \noindent
+
+\begin{center}
+    
+\reversemarginpar
+
+    \begin{figure}[H]
+        \centering\includegraphics[width=12.0cm]{figuras/ISEP_logo.jpg}
+    \end{figure}
+
+    % dados do trabalho
+    
+    \textbf{\huge \cursoaux}
+    \vskip15mm
+
+    \begin{table}[htb]
+    \renewcommand\arraystretch{8}
+    \centering
+        \begin{tabular}{>{\centering\arraybackslash}m{13.5cm} }
+            \textbf{\huge\tituloaux}\par\\
+         \end{tabular}
+    \end{table}    
+
+    \vskip5mm
+    \textbf{\Large \organizacaoaux}
+
+    \vspace*{\stretch{3}}
+    \vskip10mm
+    \textbf{\LARGE \alunoaux}
+
+    \vspace*{\stretch{3}}
+    \vspace*{4mm} 
+    \textbf{\Large \datadefesaaux}
+
+    \vskip10mm
+   
+    \Large{Orientador ISEP: \textbf{\orientadoraux}}
+
+    \vskip5mm
+    \ifestagio
+    \Large{Supervisor Externo: \textbf{\supervisoraux}}
+    \fi
+\end{center}
+
+\cleardoublepage
+

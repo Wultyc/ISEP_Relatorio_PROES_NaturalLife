@@ -1,0 +1,97 @@
+%%
+%% ISEP - LES
+%% Modelo de relatório para PROES
+%%
+%% Elaborado pela Direcção de Curso
+%% Versão 0  - Março 2019
+%%
+
+\documentclass[a4paper,11pt]{memoir}
+
+% *************** Document style definitions ***************
+\input{style.tex}
+
+\begin{document}
+
+% *************** Hifenização ***************
+\hyphenation{
+    ca-pa-ci-da-de
+    }
+
+% *************** Título do projeto, aluno, orientador, etc. ************
+
+\curso{Licenciatura em Engenharia de Sistemas}
+\titulo{DESENVOLVIMENTO DE UM SISTEMA DE INFORMAÇÃO DE FÁBRICA}
+\organizacao{Natural Life, Lda.}
+\aluno{Jorge Gabriel Azevedo (1160929)}
+\datadefesa{19 de julho de 2019}
+\orientador{Prof. Manuel Carlos Felgueiras}
+% no caso de projeto interno não há supervisor
+% desativar flag de estagio
+\estagiotrue % ou \estagiofalse
+\supervisor{Engº Telmo Azevedo}  % é ignorado quando flag desativada
+
+% *************** Front matter ********************
+\frontmatter
+% *************** Capa do relatório ***************
+\input{Capa.tex}
+% ***************
+\pagenumbering{roman} \pagestyle{headings}
+% *************** Agradecimentos *******************
+%\addcontentsline{toc}{chapter}{Agradecimentos}
+\input{Agradecimentos.tex}
+\cleardoublepage
+% *************** Portuguese Abstract **************
+\addcontentsline{toc}{chapter}{Resumo}
+\input{Resumo.tex}
+\todo{Fazer o resumo}
+\cleardoublepage
+% *************** English Abstract *****************
+%\addcontentsline{toc}{chapter}{Abstract}
+%\input{Abstract.tex}
+%\cleardoublepage
+% *************** Table of contents ****************
+\renewcommand*\contentsname{Índice}
+\tableofcontents
+\cleardoublepage
+% *************** Table of figures *****************
+\renewcommand{\listfigurename}{Índice de figuras}
+\listoffigures 
+\cleardoublepage
+% *************** Table of tables ******************
+\renewcommand{\listtablename}{Índice de tabelas}
+\listoftables 
+\cleardoublepage
+% *************** Table of symbols *****************
+\input{Acronimos.tex}
+\cleardoublepage
+% *************** Main matter **********************
+\mainmatter
+\input{Capitulo_1.tex}
+\cleardoublepage
+\input{Capitulo_2.tex}
+\cleardoublepage
+\input{Capitulo_3.tex}
+\cleardoublepage
+\input{Capitulo_4.tex}
+\cleardoublepage
+\input{Capitulo_5.tex}
+\cleardoublepage
+\input{Capitulo_6.tex}
+\cleardoublepage
+% *************** Bibliografia *********************
+\renewcommand*\bibname{Referências Bibliográficas}
+\bibliographystyle{ieeetr}
+\bibliography{bibliografia}
+\cleardoublepage
+% *************** Anexos ***************************
+\renewcommand{\appendixname}{Anexo}
+\appendix
+\input{Anexo_A.tex}
+\cleardoublepage
+\input{Anexo_B.tex}
+\cleardoublepage
+\input{Anexo_C.tex}
+\cleardoublepage
+
+\end{document}
