@@ -1,15 +1,7 @@
-%%
-%% ISEP - LES
-%% Modelo de relatório para PROES
-%%
-%% Elaborado pela Direcção de Curso
-%% Versão 0  - Março 2019
-%%
-
 \documentclass[a4paper,11pt]{memoir}
 
 % *************** Document style definitions ***************
-\input{style.tex}
+\input{estilos/style.tex}
 
 \begin{document}
 
@@ -28,13 +20,14 @@
 \orientador{Prof. Manuel Carlos Felgueiras}
 % no caso de projeto interno não há supervisor
 % desativar flag de estagio
-\estagiotrue % ou \estagiofalse
+\estagiotrue 
+%\estagiofalse
 \supervisor{Engº Telmo Azevedo}  % é ignorado quando flag desativada
 
 % *************** Front matter ********************
 \frontmatter
 % *************** Capa do relatório ***************
-\input{Capa.tex}
+\input{estilos/Capa.tex}
 % ***************
 \pagenumbering{roman} \pagestyle{headings}
 % *************** Agradecimentos *******************
