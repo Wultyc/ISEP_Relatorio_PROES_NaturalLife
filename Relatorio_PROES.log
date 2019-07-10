@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.9)  10 JUL 2019 11:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.9)  11 JUL 2019 00:06
 entering extended mode
 **./Relatorio_PROES.tex
 (Relatorio_PROES.tex
@@ -364,8 +364,8 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen147
 \Gin@req@width=\dimen148
 )
-(C:\Users\Jorge\AppData\Roaming\MiKTeX\2.9\tex/latex/subfig\subfig.sty
-Package: subfig 2005/06/28 ver: 1.3 subfig package
+(C:\Users\Jorge\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\subcaption.sty
+Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
 
 
 Class memoir Warning: You are using the caption package with the memoir class. 
@@ -391,15 +391,16 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \c@caption@flags=\count138
 \c@ContinuedFloat=\count139
 )
-\c@KVtest=\count140
+\c@subfigure=\count140
+\c@subtable=\count141
+)
+(C:\Users\Jorge\AppData\Roaming\MiKTeX\2.9\tex/latex/subfig\subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count142
 \sf@farskip=\skip185
 \sf@captopadj=\dimen156
 \sf@capskip=\skip186
 \sf@nearskip=\skip187
-\c@subfigure=\count141
-\c@subfigure@save=\count142
-\c@subtable=\count143
-\c@subtable@save=\count144
 \sf@top=\skip188
 \sf@bottom=\skip189
 )
@@ -434,13 +435,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count145
+\inf@bad=\count143
 LaTeX Info: Redefining \frac on input line 223.
-\uproot@=\count146
-\leftroot@=\count147
+\uproot@=\count144
+\leftroot@=\count145
 LaTeX Info: Redefining \overline on input line 385.
-\classnum@=\count148
-\DOTSCASE@=\count149
+\classnum@=\count146
+\DOTSCASE@=\count147
 LaTeX Info: Redefining \ldots on input line 482.
 LaTeX Info: Redefining \dots on input line 485.
 LaTeX Info: Redefining \cdots on input line 606.
@@ -449,15 +450,15 @@ LaTeX Info: Redefining \cdots on input line 606.
 \big@size=\dimen159
 LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
-\macc@depth=\count150
-\c@MaxMatrixCols=\count151
+\macc@depth=\count148
+\c@MaxMatrixCols=\count149
 \dotsspace@=\muskip10
-\c@parentequation=\count152
-\dspbrk@lvl=\count153
+\c@parentequation=\count150
+\dspbrk@lvl=\count151
 \tag@help=\toks25
-\row@=\count154
-\column@=\count155
-\maxfields@=\count156
+\row@=\count152
+\column@=\count153
+\maxfields@=\count154
 \andhelp@=\toks26
 \eqnshift@=\dimen160
 \alignsep@=\dimen161
@@ -490,18 +491,18 @@ Package: expl3 2019-07-01 L3 programming layer (loader)
 
 (C:\Users\Jorge\AppData\Roaming\MiKTeX\2.9\tex/latex/l3kernel\expl3-code.tex
 Package: expl3 2019-07-01 L3 programming layer (code)
-\c_max_int=\count157
-\l_tmpa_int=\count158
-\l_tmpb_int=\count159
-\g_tmpa_int=\count160
-\g_tmpb_int=\count161
-\g__kernel_prg_map_int=\count162
-\c__ior_term_ior=\count163
-\c_log_iow=\count164
-\l_iow_line_count_int=\count165
-\l__iow_line_target_int=\count166
-\l__iow_one_indent_int=\count167
-\l__iow_indent_int=\count168
+\c_max_int=\count155
+\l_tmpa_int=\count156
+\l_tmpb_int=\count157
+\g_tmpa_int=\count158
+\g_tmpb_int=\count159
+\g__kernel_prg_map_int=\count160
+\c__ior_term_ior=\count161
+\c_log_iow=\count162
+\l_iow_line_count_int=\count163
+\l__iow_line_target_int=\count164
+\l__iow_one_indent_int=\count165
+\l__iow_indent_int=\count166
 \c_zero_dim=\dimen166
 \c_max_dim=\dimen167
 \l_tmpa_dim=\dimen168
@@ -520,80 +521,80 @@ Package: expl3 2019-07-01 L3 programming layer (code)
 \l_tmpb_muskip=\muskip14
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
-\l_keys_choice_int=\count169
-\l__intarray_loop_int=\count170
+\l_keys_choice_int=\count167
+\l__intarray_loop_int=\count168
 \c__intarray_sp_dim=\dimen172
-\g__intarray_font_int=\count171
-\c__fp_leading_shift_int=\count172
-\c__fp_middle_shift_int=\count173
-\c__fp_trailing_shift_int=\count174
-\c__fp_big_leading_shift_int=\count175
-\c__fp_big_middle_shift_int=\count176
-\c__fp_big_trailing_shift_int=\count177
-\c__fp_Bigg_leading_shift_int=\count178
-\c__fp_Bigg_middle_shift_int=\count179
-\c__fp_Bigg_trailing_shift_int=\count180
-\c__kernel_randint_max_int=\count181
-\g__fp_array_int=\count182
-\l__fp_array_loop_int=\count183
-\l__sort_length_int=\count184
-\l__sort_min_int=\count185
-\l__sort_top_int=\count186
-\l__sort_max_int=\count187
-\l__sort_true_max_int=\count188
-\l__sort_block_int=\count189
-\l__sort_begin_int=\count190
-\l__sort_end_int=\count191
-\l__sort_A_int=\count192
-\l__sort_B_int=\count193
-\l__sort_C_int=\count194
-\l__str_internal_int=\count266
-\c__str_replacement_char_int=\count267
-\l__tl_analysis_normal_int=\count268
-\l__tl_analysis_index_int=\count269
-\l__tl_analysis_nesting_int=\count270
-\l__tl_analysis_type_int=\count271
-\l__regex_internal_a_int=\count272
-\l__regex_internal_b_int=\count273
-\l__regex_internal_c_int=\count274
-\l__regex_balance_int=\count275
-\l__regex_group_level_int=\count276
-\l__regex_mode_int=\count277
-\c__regex_cs_in_class_mode_int=\count278
-\c__regex_cs_mode_int=\count279
-\l__regex_catcodes_int=\count280
-\l__regex_default_catcodes_int=\count281
-\c__regex_catcode_D_int=\count282
-\c__regex_catcode_S_int=\count283
-\c__regex_catcode_L_int=\count284
-\c__regex_catcode_O_int=\count285
-\c__regex_catcode_A_int=\count286
-\c__regex_all_catcodes_int=\count287
-\l__regex_show_lines_int=\count288
-\l__regex_min_state_int=\count289
-\l__regex_max_state_int=\count290
-\l__regex_left_state_int=\count291
-\l__regex_right_state_int=\count292
-\l__regex_capturing_group_int=\count293
-\l__regex_min_pos_int=\count294
-\l__regex_max_pos_int=\count295
-\l__regex_curr_pos_int=\count296
-\l__regex_start_pos_int=\count297
-\l__regex_success_pos_int=\count298
-\l__regex_curr_char_int=\count299
-\l__regex_curr_catcode_int=\count300
-\l__regex_last_char_int=\count301
-\l__regex_case_changed_char_int=\count302
-\l__regex_curr_state_int=\count303
-\l__regex_step_int=\count304
-\l__regex_min_active_int=\count305
-\l__regex_max_active_int=\count306
-\l__regex_replacement_csnames_int=\count307
-\l__regex_match_count_int=\count308
-\l__regex_min_submatch_int=\count309
-\l__regex_submatch_int=\count310
-\l__regex_zeroth_submatch_int=\count311
-\g__regex_trace_regex_int=\count312
+\g__intarray_font_int=\count169
+\c__fp_leading_shift_int=\count170
+\c__fp_middle_shift_int=\count171
+\c__fp_trailing_shift_int=\count172
+\c__fp_big_leading_shift_int=\count173
+\c__fp_big_middle_shift_int=\count174
+\c__fp_big_trailing_shift_int=\count175
+\c__fp_Bigg_leading_shift_int=\count176
+\c__fp_Bigg_middle_shift_int=\count177
+\c__fp_Bigg_trailing_shift_int=\count178
+\c__kernel_randint_max_int=\count179
+\g__fp_array_int=\count180
+\l__fp_array_loop_int=\count181
+\l__sort_length_int=\count182
+\l__sort_min_int=\count183
+\l__sort_top_int=\count184
+\l__sort_max_int=\count185
+\l__sort_true_max_int=\count186
+\l__sort_block_int=\count187
+\l__sort_begin_int=\count188
+\l__sort_end_int=\count189
+\l__sort_A_int=\count190
+\l__sort_B_int=\count191
+\l__sort_C_int=\count192
+\l__str_internal_int=\count193
+\c__str_replacement_char_int=\count194
+\l__tl_analysis_normal_int=\count266
+\l__tl_analysis_index_int=\count267
+\l__tl_analysis_nesting_int=\count268
+\l__tl_analysis_type_int=\count269
+\l__regex_internal_a_int=\count270
+\l__regex_internal_b_int=\count271
+\l__regex_internal_c_int=\count272
+\l__regex_balance_int=\count273
+\l__regex_group_level_int=\count274
+\l__regex_mode_int=\count275
+\c__regex_cs_in_class_mode_int=\count276
+\c__regex_cs_mode_int=\count277
+\l__regex_catcodes_int=\count278
+\l__regex_default_catcodes_int=\count279
+\c__regex_catcode_D_int=\count280
+\c__regex_catcode_S_int=\count281
+\c__regex_catcode_L_int=\count282
+\c__regex_catcode_O_int=\count283
+\c__regex_catcode_A_int=\count284
+\c__regex_all_catcodes_int=\count285
+\l__regex_show_lines_int=\count286
+\l__regex_min_state_int=\count287
+\l__regex_max_state_int=\count288
+\l__regex_left_state_int=\count289
+\l__regex_right_state_int=\count290
+\l__regex_capturing_group_int=\count291
+\l__regex_min_pos_int=\count292
+\l__regex_max_pos_int=\count293
+\l__regex_curr_pos_int=\count294
+\l__regex_start_pos_int=\count295
+\l__regex_success_pos_int=\count296
+\l__regex_curr_char_int=\count297
+\l__regex_curr_catcode_int=\count298
+\l__regex_last_char_int=\count299
+\l__regex_case_changed_char_int=\count300
+\l__regex_curr_state_int=\count301
+\l__regex_step_int=\count302
+\l__regex_min_active_int=\count303
+\l__regex_max_active_int=\count304
+\l__regex_replacement_csnames_int=\count305
+\l__regex_match_count_int=\count306
+\l__regex_min_submatch_int=\count307
+\l__regex_submatch_int=\count308
+\l__regex_zeroth_submatch_int=\count309
+\g__regex_trace_regex_int=\count310
 \c_empty_box=\box34
 \l_tmpa_box=\box35
 \l_tmpb_box=\box36
@@ -638,24 +639,24 @@ Package: expl3 2019-07-01 L3 programming layer (code)
 \l__coffin_display_x_dim=\dimen257
 \l__coffin_display_y_dim=\dimen258
 \g__file_internal_ior=\read2
-\l__seq_internal_a_int=\count313
-\l__seq_internal_b_int=\count314
-\c__deprecation_minus_one=\count315
+\l__seq_internal_a_int=\count311
+\l__seq_internal_b_int=\count312
+\c__deprecation_minus_one=\count313
 )
 (C:\Users\Jorge\AppData\Roaming\MiKTeX\2.9\tex/latex/l3backend\l3backend-pdfmod
 e.def
 File: l3backend-pdfmode.def 2019-04-06 v L3 Experimental backend support: PDF m
 ode
-\l__kernel_color_stack_int=\count316
+\l__kernel_color_stack_int=\count314
 \l__pdf_internal_box=\box52
 ))
 (C:\Users\Jorge\AppData\Roaming\MiKTeX\2.9\tex/latex/l3packages/xparse\xparse.s
 ty
 Package: xparse 2019-05-28 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count317
-\g__xparse_grabber_int=\count318
-\l__xparse_m_args_int=\count319
-\l__xparse_v_nesting_int=\count320
+\l__xparse_current_arg_int=\count315
+\g__xparse_grabber_int=\count316
+\l__xparse_m_args_int=\count317
+\l__xparse_v_nesting_int=\count318
 )
 Package: siunitx 2018/05/17 v2.7s A comprehensive (SI) units package
 
@@ -665,27 +666,27 @@ Package: l3keys2e 2019-05-28 LaTeX2e option processing using LaTeX3 keys
 )
 \l__siunitx_tmp_box=\box53
 \l__siunitx_tmp_dim=\dimen259
-\l__siunitx_tmp_int=\count321
-\l__siunitx_number_mantissa_length_int=\count322
-\l__siunitx_number_uncert_length_int=\count323
-\l__siunitx_round_int=\count324
-\l__siunitx_process_decimal_int=\count325
-\l__siunitx_process_uncertainty_int=\count326
-\l__siunitx_process_fixed_int=\count327
-\l__siunitx_process_integer_min_int=\count328
-\l__siunitx_process_precision_int=\count329
-\l__siunitx_group_min_int=\count330
+\l__siunitx_tmp_int=\count319
+\l__siunitx_number_mantissa_length_int=\count320
+\l__siunitx_number_uncert_length_int=\count321
+\l__siunitx_round_int=\count322
+\l__siunitx_process_decimal_int=\count323
+\l__siunitx_process_uncertainty_int=\count324
+\l__siunitx_process_fixed_int=\count325
+\l__siunitx_process_integer_min_int=\count326
+\l__siunitx_process_precision_int=\count327
+\l__siunitx_group_min_int=\count328
 \l__siunitx_angle_marker_box=\box54
 \l__siunitx_angle_unit_box=\box55
 \l__siunitx_angle_marker_dim=\dimen260
 \l__siunitx_angle_unit_dim=\dimen261
-\l__siunitx_unit_int=\count331
-\l__siunitx_unit_denominator_int=\count332
-\l__siunitx_unit_numerator_int=\count333
-\l__siunitx_unit_prefix_int=\count334
-\l__siunitx_unit_prefix_base_int=\count335
-\l__siunitx_unit_prefix_gram_int=\count336
-\l__siunitx_number_product_int=\count337
+\l__siunitx_unit_int=\count329
+\l__siunitx_unit_denominator_int=\count330
+\l__siunitx_unit_numerator_int=\count331
+\l__siunitx_unit_prefix_int=\count332
+\l__siunitx_unit_prefix_base_int=\count333
+\l__siunitx_unit_prefix_gram_int=\count334
+\l__siunitx_number_product_int=\count335
 \c__siunitx_one_fill_skip=\skip263
 \l__siunitx_table_unit_align_skip=\skip264
 \l__siunitx_table_exponent_dim=\dimen262
@@ -714,16 +715,16 @@ Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 Package: fancyvrb 2019/01/15
 
 Style option: `fancyvrb' v3.2a <2019/01/15> (tvz)
-\FV@CodeLineNo=\count338
+\FV@CodeLineNo=\count336
 \FV@InFile=\read3
 \FV@TabBox=\box61
-\c@FancyVerbLine=\count339
-\FV@StepNumber=\count340
+\c@FancyVerbLine=\count337
+\FV@StepNumber=\count338
 \FV@OutFile=\write4
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count341
+\c@float@type=\count339
 \float@exts=\toks35
 \float@box=\box62
 \@float@everytoks=\toks36
@@ -745,22 +746,22 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
 \LTright=\skip268
 \LTpre=\skip269
 \LTpost=\skip270
-\LTchunksize=\count342
+\LTchunksize=\count340
 \LTcapwidth=\dimen271
 \LT@head=\box64
 \LT@firsthead=\box65
 \LT@foot=\box66
 \LT@lastfoot=\box67
-\LT@cols=\count343
-\LT@rows=\count344
-\c@LT@tables=\count345
-\c@LT@chunks=\count346
+\LT@cols=\count341
+\LT@rows=\count342
+\c@LT@tables=\count343
+\c@LT@chunks=\count344
 \LT@p@ftn=\toks37
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/multirow\multirow.sty"
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip271
-\multirow@cntb=\count347
+\multirow@cntb=\count345
 \multirow@dima=\skip272
 \bigstrutjot=\dimen272
 )
@@ -770,7 +771,7 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count348
+\c@r@tfl@t=\count346
 \rotFPtop=\skip273
 \rotFPbot=\skip274
 \rot@float@box=\box68
@@ -851,15 +852,15 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen273
-\Hy@linkcounter=\count349
-\Hy@pagecounter=\count350
+\Hy@linkcounter=\count347
+\Hy@pagecounter=\count348
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\pd1enc.def"
 File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count351
+\Hy@SavedSpaceFactor=\count349
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -871,10 +872,10 @@ Package hyperref Info: Plain pages OFF on input line 4534.
 Package hyperref Info: Backreferencing OFF on input line 4539.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4772.
-\c@Hy@tempcnt=\count352
+\c@Hy@tempcnt=\count350
 LaTeX Info: Redefining \url on input line 5125.
 \XeTeXLinkMargin=\dimen274
-\Fld@menulength=\count353
+\Fld@menulength=\count351
 \Field@Width=\dimen275
 \Fld@charsize=\dimen276
 Package hyperref Info: Hyper figures OFF on input line 6380.
@@ -886,22 +887,22 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6405.
 Package hyperref Info: PDF/A mode OFF on input line 6410.
 LaTeX Info: Redefining \ref on input line 6450.
 LaTeX Info: Redefining \pageref on input line 6454.
-\Hy@abspage=\count354
-\c@Item=\count355
-\c@Hfootnote=\count356
+\Hy@abspage=\count352
+\c@Item=\count353
+\c@Hfootnote=\count354
 )
 (C:\Users\Jorge\AppData\Roaming\MiKTeX\2.9\tex/latex/memoir\memhfixc.sty
 Package: memhfixc 2013/05/30 v1.17 nameref/hyperref package fixes for memoir cl
 ass
-\c@memhycontfloat=\count357
-\c@Hpagenote=\count358
+\c@memhycontfloat=\count355
+\c@Hpagenote=\count356
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hpdftex.def"
 File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
-\Fld@listcount=\count359
-\c@bookmark@seq@number=\count360
+\Fld@listcount=\count357
+\c@bookmark@seq@number=\count358
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
@@ -932,11 +933,11 @@ f
 Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
  ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
 File: babel.def 2019/06/03 3.32 Babel common definitions
-\babel@savecnt=\count361
+\babel@savecnt=\count359
 \U@D=\dimen277
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
-\bbl@dirlevel=\count362
+\bbl@dirlevel=\count360
 )
 Package babel Info: Making " an active character on input line 145.
 ))
@@ -952,7 +953,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks41
 \XKV@tempa@toks=\toks42
 )
-\XKV@depth=\count363
+\XKV@depth=\count361
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (C:\Users\Jorge\AppData\Roaming\MiKTeX\2.9\tex/latex/xcolor\xcolor.sty
@@ -1025,14 +1026,14 @@ tered.code.tex
 \pgf@yd=\dimen289
 \w@pgf@writea=\write5
 \r@pgf@reada=\read4
-\c@pgf@counta=\count364
-\c@pgf@countb=\count365
-\c@pgf@countc=\count366
-\c@pgf@countd=\count367
+\c@pgf@counta=\count362
+\c@pgf@countb=\count363
+\c@pgf@countc=\count364
+\c@pgf@countd=\count365
 \t@pgf@toka=\toks47
 \t@pgf@tokb=\toks48
 \t@pgf@tokc=\toks49
-\pgf@sys@id@count=\count368
+\pgf@sys@id@count=\count366
 
 (C:\Users\Jorge\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2019/05/09 v3.1.3 (3.1.3)
@@ -1050,8 +1051,8 @@ File: pgfsys-common-pdf.def 2019/05/09 v3.1.3 (3.1.3)
 (C:\Users\Jorge\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsysso
 ftpath.code.tex
 File: pgfsyssoftpath.code.tex 2019/05/09 v3.1.3 (3.1.3)
-\pgfsyssoftpath@smallbuffer@items=\count369
-\pgfsyssoftpath@bigbuffer@items=\count370
+\pgfsyssoftpath@smallbuffer@items=\count367
+\pgfsyssoftpath@bigbuffer@items=\count368
 )
 (C:\Users\Jorge\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsyspr
 otocol.code.tex
@@ -1070,7 +1071,7 @@ e.tex)
 (C:\Users\Jorge\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathparser.c
 ode.tex
 \pgfmath@dimen=\dimen290
-\pgfmath@count=\count371
+\pgfmath@count=\count369
 \pgfmath@box=\box70
 \pgfmath@toks=\toks50
 \pgfmath@stack@operand=\toks51
@@ -1096,7 +1097,7 @@ s.misc.code.tex)
 s.integerarithmetics.code.tex)))
 (C:\Users\Jorge\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfloat.co
 de.tex
-\c@pgfmathroundto@lastzeros=\count372
+\c@pgfmathroundto@lastzeros=\count370
 ))
 (C:\Users\Jorge\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfint.code.tex
 )
@@ -1136,7 +1137,7 @@ File: pgfcorescopes.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgfpic=\box71
 \pgf@hbox=\box72
 \pgf@layerbox@main=\box73
-\pgf@picture@serial@count=\count373
+\pgf@picture@serial@count=\count371
 )
 (C:\Users\Jorge\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoregr
 aphicstate.code.tex
@@ -1171,8 +1172,8 @@ File: pgfcorearrows.code.tex 2019/05/09 v3.1.3 (3.1.3)
 ade.code.tex
 File: pgfcoreshade.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgf@max=\dimen314
-\pgf@sys@shading@range@num=\count374
-\pgf@shadingcount=\count375
+\pgf@sys@shading@range@num=\count372
+\pgf@shadingcount=\count373
 )
 (C:\Users\Jorge\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoreim
 age.code.tex
@@ -1243,7 +1244,7 @@ Package: tikz 2019/05/09 v3.1.3 (3.1.3)
 (C:\Users\Jorge\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries\pgflibrary
 plothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2019/05/09 v3.1.3 (3.1.3)
-\pgf@plot@mark@count=\count376
+\pgf@plot@mark@count=\count374
 \pgfplotmarksize=\dimen319
 )
 \tikz@lastx=\dimen320
@@ -1256,19 +1257,19 @@ File: pgflibraryplothandlers.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \tikz@figbox@bg=\box77
 \tikz@tempbox=\box78
 \tikz@tempbox@bg=\box79
-\tikztreelevel=\count377
-\tikznumberofchildren=\count378
-\tikznumberofcurrentchild=\count379
-\tikz@fig@count=\count380
+\tikztreelevel=\count375
+\tikznumberofchildren=\count376
+\tikznumberofcurrentchild=\count377
+\tikz@fig@count=\count378
 
 (C:\Users\Jorge\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmodulemat
 rix.code.tex
 File: pgfmodulematrix.code.tex 2019/05/09 v3.1.3 (3.1.3)
-\pgfmatrixcurrentrow=\count381
-\pgfmatrixcurrentcolumn=\count382
-\pgf@matrix@numberofcolumns=\count383
+\pgfmatrixcurrentrow=\count379
+\pgfmatrixcurrentcolumn=\count380
+\pgf@matrix@numberofcolumns=\count381
 )
-\tikz@expandcount=\count384
+\tikz@expandcount=\count382
 
 (C:\Users\Jorge\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/l
 ibraries\tikzlibrarytopaths.code.tex
@@ -1291,21 +1292,21 @@ fadings.code.tex
 File: pgflibraryfadings.code.tex 2019/05/09 v3.1.3 (3.1.3)
 ))) ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\calc.sty"
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count385
-\calc@Bcount=\count386
+\calc@Acount=\count383
+\calc@Bcount=\count384
 \calc@Adimen=\dimen326
 \calc@Bdimen=\dimen327
 \calc@Askip=\skip276
 \calc@Bskip=\skip277
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count387
+\calc@Ccount=\count385
 \calc@Cskip=\skip278
 )
-\c@@todonotes@numberoftodonotes=\count388
+\c@@todonotes@numberoftodonotes=\count386
 )
 \@float@every@myprogram=\toks55
-\c@myprogram=\count389
+\c@myprogram=\count387
 \Relatorio_PROES@idxfile=\write6
 \openout6 = `Relatorio_PROES.idx'.
 
@@ -1351,16 +1352,16 @@ LaTeX Font Info:    ... okay on input line 6.
 
 (C:\Users\Jorge\AppData\Roaming\MiKTeX\2.9\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count390
+\scratchcounter=\count388
 \scratchdimen=\dimen328
 \scratchbox=\box80
-\nofMPsegments=\count391
-\nofMParguments=\count392
+\nofMPsegments=\count389
+\nofMParguments=\count390
 \everyMPshowfont=\toks56
-\MPscratchCnt=\count393
+\MPscratchCnt=\count391
 \MPscratchDim=\dimen329
-\MPnumerator=\count394
-\makeMPintoPDFobject=\count395
+\MPnumerator=\count392
+\makeMPintoPDFobject=\count393
 \everyMPtoPDFconversion=\toks57
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1385,83 +1386,38 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2018/08/26 v1.4-95 longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
+
+
+! Package subcaption Error: This package can't be used in cooperation
+(subcaption)                with the subfig package.
+
+See the subcaption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \begin{document}
+                    
+If you do not understand this error, please take a closer look
+at the documentation of the `subcaption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 Package caption Info: End \AtBeginDocument code.
+! Undefined control sequence.
+<argument> \sf@counterlist 
+                           
+l.6 \begin{document}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1enc.dfu"
-File: ts1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
-   defining Unicode char U+00A2 (decimal 162)
-   defining Unicode char U+00A3 (decimal 163)
-   defining Unicode char U+00A4 (decimal 164)
-   defining Unicode char U+00A5 (decimal 165)
-   defining Unicode char U+00A6 (decimal 166)
-   defining Unicode char U+00A7 (decimal 167)
-   defining Unicode char U+00A8 (decimal 168)
-   defining Unicode char U+00A9 (decimal 169)
-   defining Unicode char U+00AA (decimal 170)
-   defining Unicode char U+00AC (decimal 172)
-   defining Unicode char U+00AE (decimal 174)
-   defining Unicode char U+00AF (decimal 175)
-   defining Unicode char U+00B0 (decimal 176)
-   defining Unicode char U+00B1 (decimal 177)
-   defining Unicode char U+00B2 (decimal 178)
-   defining Unicode char U+00B3 (decimal 179)
-   defining Unicode char U+00B4 (decimal 180)
-   defining Unicode char U+00B5 (decimal 181)
-   defining Unicode char U+00B6 (decimal 182)
-   defining Unicode char U+00B7 (decimal 183)
-   defining Unicode char U+00B9 (decimal 185)
-   defining Unicode char U+00BA (decimal 186)
-   defining Unicode char U+00BC (decimal 188)
-   defining Unicode char U+00BD (decimal 189)
-   defining Unicode char U+00BE (decimal 190)
-   defining Unicode char U+00D7 (decimal 215)
-   defining Unicode char U+00F7 (decimal 247)
-   defining Unicode char U+0192 (decimal 402)
-   defining Unicode char U+02C7 (decimal 711)
-   defining Unicode char U+02D8 (decimal 728)
-   defining Unicode char U+02DD (decimal 733)
-   defining Unicode char U+0E3F (decimal 3647)
-   defining Unicode char U+2016 (decimal 8214)
-   defining Unicode char U+2020 (decimal 8224)
-   defining Unicode char U+2021 (decimal 8225)
-   defining Unicode char U+2022 (decimal 8226)
-   defining Unicode char U+2030 (decimal 8240)
-   defining Unicode char U+2031 (decimal 8241)
-   defining Unicode char U+203B (decimal 8251)
-   defining Unicode char U+203D (decimal 8253)
-   defining Unicode char U+2044 (decimal 8260)
-   defining Unicode char U+204E (decimal 8270)
-   defining Unicode char U+2052 (decimal 8274)
-   defining Unicode char U+20A1 (decimal 8353)
-   defining Unicode char U+20A4 (decimal 8356)
-   defining Unicode char U+20A6 (decimal 8358)
-   defining Unicode char U+20A9 (decimal 8361)
-   defining Unicode char U+20AB (decimal 8363)
-   defining Unicode char U+20AC (decimal 8364)
-   defining Unicode char U+20B1 (decimal 8369)
-   defining Unicode char U+2103 (decimal 8451)
-   defining Unicode char U+2116 (decimal 8470)
-   defining Unicode char U+2117 (decimal 8471)
-   defining Unicode char U+211E (decimal 8478)
-   defining Unicode char U+2120 (decimal 8480)
-   defining Unicode char U+2122 (decimal 8482)
-   defining Unicode char U+2126 (decimal 8486)
-   defining Unicode char U+2127 (decimal 8487)
-   defining Unicode char U+212E (decimal 8494)
-   defining Unicode char U+2190 (decimal 8592)
-   defining Unicode char U+2191 (decimal 8593)
-   defining Unicode char U+2192 (decimal 8594)
-   defining Unicode char U+2193 (decimal 8595)
-   defining Unicode char U+2329 (decimal 9001)
-   defining Unicode char U+232A (decimal 9002)
-   defining Unicode char U+2422 (decimal 9250)
-   defining Unicode char U+25E6 (decimal 9702)
-   defining Unicode char U+25EF (decimal 9711)
-   defining Unicode char U+266A (decimal 9834)
-   defining Unicode char U+FEFF (decimal 65279)
-)
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1enc.dfu")
 (C:\Users\Jorge\AppData\Roaming\MiKTeX\2.9\tex/latex/translator\translator-basi
 c-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
@@ -1478,7 +1434,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count396
+\c@section@level=\count394
 )
 Redoing nameref's sectioning
 Redoing nameref's label
@@ -1510,7 +1466,7 @@ LaTeX Font Info:    Try loading font information for T1+aess on input line 5.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/ae\t1aess.fd"
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 )
-<figuras/ISEP_logo.jpg, id=186, 391.4625pt x 75.28125pt>
+<figuras/ISEP_logo.jpg, id=170, 391.4625pt x 75.28125pt>
 File: figuras/ISEP_logo.jpg Graphic file (type jpg)
 <use figuras/ISEP_logo.jpg>
 Package pdftex.def Info: figuras/ISEP_logo.jpg  used on input line 12.
@@ -1560,12 +1516,16 @@ Overfull \vbox (13.99997pt too high) has occurred while \output is active []
 
 ] (Relatorio_PROES.lot) [9] [10
 
-] (Acronimos.tex) [11
+] (Acronimos.tex
+
+LaTeX Warning: Reference `sym:TI' on page xi undefined on input line 23.
+
+) [11
 
 ] [12
 
 ] (Capitulo_1.tex
-<figuras/PlantaNaturalLife.png, id=313, 1598.97375pt x 720.6925pt>
+<figuras/PlantaNaturalLife.png, id=291, 1598.97375pt x 720.6925pt>
 File: figuras/PlantaNaturalLife.png Graphic file (type png)
 <use figuras/PlantaNaturalLife.png>
 Package pdftex.def Info: figuras/PlantaNaturalLife.png  used on input line 17.
@@ -1581,104 +1541,111 @@ Overfull \vbox (13.99997pt too high) has occurred while \output is active []
 
 
 [2 <./figuras/PlantaNaturalLife.png>]
-<figuras/DiagramaGant.jpg, id=328, 608.2725pt x 237.13594pt>
+<figuras/DiagramaGant.jpg, id=306, 608.2725pt x 237.13594pt>
 File: figuras/DiagramaGant.jpg Graphic file (type jpg)
 <use figuras/DiagramaGant.jpg>
 Package pdftex.def Info: figuras/DiagramaGant.jpg  used on input line 39.
 (pdftex.def)             Requested size: 420.0pt x 163.73975pt.
 LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10.95> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 53.
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 46.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 45--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--64
-
- []
-
-
 Overfull \vbox (13.99997pt too high) has occurred while \output is active []
 
 
 [3 <./figuras/DiagramaGant.jpg>] [4
 
-] (Capitulo_2.tex
-<figuras/AppAccess/0-MenuInicial.jpg, id=338, 384.6872pt x 325.215pt>
-File: figuras/AppAccess/0-MenuInicial.jpg Graphic file (type jpg)
-<use figuras/AppAccess/0-MenuInicial.jpg>
-Package pdftex.def Info: figuras/AppAccess/0-MenuInicial.jpg  used on input lin
-e 12.
-(pdftex.def)             Requested size: 315.0pt x 266.32072pt.
- [5
+] (Capitulo_2.tex) [5
 
- <./figuras/AppAccess/0-MenuInicial.jpg>]
-LaTeX Font Info:    Try loading font information for OMS+aess on input line 24.
+] [6
 
-LaTeX Font Info:    No file OMSaess.fd. on input line 24.
+] (Capitulo_3.tex
+Underfull \hbox (badness 10000) in paragraph at lines 7--12
 
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+aess on input line 12.
+
+LaTeX Font Info:    No file OMSaess.fd. on input line 12.
 
 LaTeX Font Warning: Font shape `OMS/aess/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 24.
+(Font)              for symbol `textbullet' on input line 12.
 
-)
-Overfull \vbox (13.99997pt too high) has occurred while \output is active []
-
-
-[6] (Capitulo_3.tex [7
-
+[7
 
 ]
+<figuras/AppAccess/0-MenuInicial.jpg, id=331, 384.6872pt x 325.215pt>
+File: figuras/AppAccess/0-MenuInicial.jpg Graphic file (type jpg)
+<use figuras/AppAccess/0-MenuInicial.jpg>
+Package pdftex.def Info: figuras/AppAccess/0-MenuInicial.jpg  used on input lin
+e 40.
+(pdftex.def)             Requested size: 126.00128pt x 106.52234pt.
+<figuras/AppAccess/1-Ponto.jpg, id=332, 335.75438pt x 274.77657pt>
+File: figuras/AppAccess/1-Ponto.jpg Graphic file (type jpg)
+<use figuras/AppAccess/1-Ponto.jpg>
+Package pdftex.def Info: figuras/AppAccess/1-Ponto.jpg  used on input line 44.
+(pdftex.def)             Requested size: 126.00128pt x 103.11641pt.
+<figuras/AppAccess/2-Recolha.jpg, id=333, 384.6872pt x 258.9675pt>
+File: figuras/AppAccess/2-Recolha.jpg Graphic file (type jpg)
+<use figuras/AppAccess/2-Recolha.jpg>
+Package pdftex.def Info: figuras/AppAccess/2-Recolha.jpg  used on input line 48
+.
+(pdftex.def)             Requested size: 126.00128pt x 84.82333pt.
+<figuras/AppAccess/3-Producao.jpg, id=334, 594.72188pt x 365.86688pt>
+File: figuras/AppAccess/3-Producao.jpg Graphic file (type jpg)
+<use figuras/AppAccess/3-Producao.jpg>
+Package pdftex.def Info: figuras/AppAccess/3-Producao.jpg  used on input line 5
+2.
+(pdftex.def)             Requested size: 126.00128pt x 77.50981pt.
+<figuras/AppAccess/4-ProdutoAcabado.jpg, id=335, 335.75438pt x 210.7875pt>
+File: figuras/AppAccess/4-ProdutoAcabado.jpg Graphic file (type jpg)
+<use figuras/AppAccess/4-ProdutoAcabado.jpg>
+Package pdftex.def Info: figuras/AppAccess/4-ProdutoAcabado.jpg  used on input 
+line 56.
+(pdftex.def)             Requested size: 126.00128pt x 79.10301pt.
+<figuras/AppAccess/5-SaidaProdutoAcabado.jpg, id=336, 335.75438pt x 210.7875pt>
+
+File: figuras/AppAccess/5-SaidaProdutoAcabado.jpg Graphic file (type jpg)
+<use figuras/AppAccess/5-SaidaProdutoAcabado.jpg>
+Package pdftex.def Info: figuras/AppAccess/5-SaidaProdutoAcabado.jpg  used on i
+nput line 60.
+(pdftex.def)             Requested size: 126.00128pt x 79.10301pt.
+
 Overfull \vbox (13.99997pt too high) has occurred while \output is active []
 
 
-[8]
-<figuras/DB_Model/old.png, id=358, 911.405pt x 649.42625pt>
-File: figuras/DB_Model/old.png Graphic file (type png)
-<use figuras/DB_Model/old.png>
-Package pdftex.def Info: figuras/DB_Model/old.png  used on input line 48.
-(pdftex.def)             Requested size: 420.0pt x 299.27481pt.
+[8 <./figuras/AppAccess/0-MenuInicial.jpg> <./figuras/AppAccess/1-Ponto.jpg> <.
+/figuras/AppAccess/2-Recolha.jpg> <./figuras/AppAccess/3-Producao.jpg> <./figur
+as/AppAccess/4-ProdutoAcabado.jpg> <./figuras/AppAccess/5-SaidaProdutoAcabado.j
+pg>]
+<figuras/AppAccess/2-CodBarras.jpg, id=344, 565.1514pt x 325.215pt>
+File: figuras/AppAccess/2-CodBarras.jpg Graphic file (type jpg)
+<use figuras/AppAccess/2-CodBarras.jpg>
+Package pdftex.def Info: figuras/AppAccess/2-CodBarras.jpg  used on input line 
+74.
+(pdftex.def)             Requested size: 167.99744pt x 96.67201pt.
+<figuras/AppAccess/5-CodBarras.jpg, id=345, 565.1514pt x 325.215pt>
+File: figuras/AppAccess/5-CodBarras.jpg Graphic file (type jpg)
+<use figuras/AppAccess/5-CodBarras.jpg>
+Package pdftex.def Info: figuras/AppAccess/5-CodBarras.jpg  used on input line 
+79.
+(pdftex.def)             Requested size: 167.99744pt x 96.67201pt.
 
 Overfull \vbox (13.99997pt too high) has occurred while \output is active []
 
 
-[9 <./figuras/DB_Model/old.png>]
-<figuras/DB_Model/new.png, id=364, 1303.87125pt x 772.8875pt>
-File: figuras/DB_Model/new.png Graphic file (type png)
-<use figuras/DB_Model/new.png>
-Package pdftex.def Info: figuras/DB_Model/new.png  used on input line 58.
-(pdftex.def)             Requested size: 420.0pt x 248.95653pt.
+[9 <./figuras/AppAccess/2-CodBarras.jpg> <./figuras/AppAccess/5-CodBarras.jpg>]
 
 Overfull \vbox (13.99997pt too high) has occurred while \output is active []
 
 
-[10 <./figuras/DB_Model/new.png>]
+[10])
 Overfull \vbox (13.99997pt too high) has occurred while \output is active []
 
 
-[11])
-Overfull \vbox (13.99997pt too high) has occurred while \output is active []
+[11] [12
 
-
-[12] (Capitulo_4.tex) [13
-
+] (Capitulo_4.tex) [13
 
 ] [14
 
@@ -1697,6 +1664,18 @@ Overfull \vbox (13.99997pt too high) has occurred while \output is active []
 
 [18] (Relatorio_PROES.bbl
 bibitemlist
+
+! Class memoir Error: Font command \bf is not supported.
+
+See the memoir class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 
+     
+Use \textbf, or \bfseries{...}, or the oldfontcommands option
+
+CiteRef Warning: Never cited from `\Mansuri2018 '.
 ) [19
 
 
@@ -1737,33 +1716,37 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 90.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 90.
 Package rerunfilecheck Info: File `Relatorio_PROES.out' has not changed.
-(rerunfilecheck)             Checksum: 7F43E9789BDA5741C71A296CE7A44048;2622.
+(rerunfilecheck)             Checksum: F9FE39BECF8963436242D0CC44E5171D;2330.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 90.
  ) 
 Here is how much of TeX's memory you used:
- 36106 strings out of 492895
- 688492 string characters out of 3133480
- 742292 words of memory out of 3000000
- 39339 multiletter control sequences out of 15000+200000
- 591858 words of font info for 139 fonts, out of 3000000 for 9000
+ 36082 strings out of 492895
+ 689513 string characters out of 3133480
+ 744368 words of memory out of 3000000
+ 39311 multiletter control sequences out of 15000+200000
+ 595526 words of font info for 143 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
- 71i,12n,81p,1184b,921s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmsl9.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi
-10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Relatorio_PROES.pdf (40 pages, 494685 bytes).
+ 71i,12n,81p,1485b,924s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsl9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx1
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi10.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Relatorio_PROES.pdf (40 pages, 777940 bytes).
 PDF statistics:
- 494 PDF objects out of 1000 (max. 8388607)
- 92 named destinations out of 1000 (max. 500000)
- 451 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 480 PDF objects out of 1000 (max. 8388607)
+ 88 named destinations out of 1000 (max. 500000)
+ 444 words of extra memory for PDF output out of 10000 (max. 10000000)
 

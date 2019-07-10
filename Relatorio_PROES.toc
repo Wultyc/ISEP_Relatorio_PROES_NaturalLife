@@ -15,17 +15,13 @@
 \contentsline {section}{\numberline {1.5}Organiza\IeC {\c c}\IeC {\~a}o do relat\IeC {\'o}rio}{3}{section.1.5}% 
 \contentsline {chapter}{\chapternumberline {2}Contexto}{5}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Estado da arte}{5}{section.2.1}% 
-\contentsline {section}{\numberline {2.2}Solu\IeC {\c c}\IeC {\~o}es j\IeC {\'a} existentes}{6}{section.2.2}% 
-\contentsline {section}{\numberline {2.3}Objetivo global}{6}{section.2.3}% 
 \contentsline {chapter}{\chapternumberline {3}Planeamento do Projeto}{7}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}Pr\IeC {\'e}-projeto}{7}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}Desindexa\IeC {\c c}\IeC {\~a}o de requisitos}{8}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Lista final de requisitos}{11}{section.3.3}% 
-\contentsline {section}{\numberline {3.4}Metodologia de gest\IeC {\~a}o de Projetos}{12}{section.3.4}% 
-\contentsline {section}{\numberline {3.5}Plataforma e ferramentas de desenvolvimento}{12}{section.3.5}% 
-\contentsline {subsection}{\numberline {3.5.1}Linguagens de Programa\IeC {\c c}\IeC {\~a}o}{12}{subsection.3.5.1}% 
-\contentsline {subsection}{\numberline {3.5.2}Base de dados}{12}{subsection.3.5.2}% 
-\contentsline {subsection}{\numberline {3.5.3}Versionamento}{12}{subsection.3.5.3}% 
+\contentsline {section}{\numberline {3.2}Estudo do sistema existente}{8}{section.3.2}% 
+\contentsline {section}{\numberline {3.3}Normaliza\IeC {\c c}\IeC {\~a}o da base de dados}{9}{section.3.3}% 
+\contentsline {section}{\numberline {3.4}Modo de implementa\IeC {\c c}\IeC {\~a}o do projeto}{9}{section.3.4}% 
+\contentsline {section}{\numberline {3.5}\IeC {\'U}ltimo levantamento de requisito}{10}{section.3.5}% 
+\contentsline {section}{\numberline {3.6}Lista final de requisitos}{10}{section.3.6}% 
 \contentsline {chapter}{\chapternumberline {4}Proje\IeC {\c c}\IeC {\~a}o do Sistema de Informa\IeC {\c c}\IeC {\~a}o}{13}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Planeamento do projeto}{13}{section.4.1}% 
 \contentsline {chapter}{\chapternumberline {5}T\IeC {\'\i }tulo Cap\IeC {\'\i }tulo 5}{15}{chapter.5}% 

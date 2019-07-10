@@ -4,114 +4,130 @@
 %Pretendia-se que fosse desenvolvido um sistema de informação completo para armazenar os registos feitos na fábrica. 
 
 \section{Pré-projeto}
-A primeira semana do projeto foi dedicada ao levantamento de requisitos. Existiam neste momento duas listas de requisitos distintas: requisitos absolutos\label{sym:REQUISITO_ABSOLUTO}, requisitos que a administração tinha uma noção exata do que pretendia e como pretendia, e requisitos indexados\label{sym:REQUISITO_INDEXADO}, que são requisitos sobre os quais a administração apenas consegue descrever o resultado que pretende.
-Da lista de requisitos absolutos faziam parte os seguintes requisitos:
-    \begin{itemize}
-        \item A aplicação só poderia ser acessível da rede interna
-        \item Uso de uma base de dados relacional
-        \item Registo do horário de entrada e saída dos colaboradores
-        \item Registo do peso e ponto de recolha de onde vinha a matéria prima
-        \item Registo do peso de cera, metal e plástico de uma produção, bem como o colaborador associado.
-        \item Registo do peso do produto final acabado
-        \item Registo da saída de produto acabado e cliente a quem foi vendido
-        \item Impressão de uma segunda via dos códigos de barras já impressos referente a uma recolha ou um produto acabado
-        \item Incremento do peso de uma recolha efetuada anteriormente.
-        \item Zona protegida por ID e Password para a consulta dos registos feitos
-        \item Possibilidade de editar e apagar registos já feitos.
-        \item Script de analise da coerência dos dados registados.
-    \end{itemize}
-Da lista de requisitos indexados faziam parte:
-    \begin{itemize}
-        \item Melhoria do design da base de dados
-        \item A aplicação deveria ser acessível em dispositivos moveis e computadores
-        \item Incremento do peso de uma recolha
-    \end{itemize}
-
-
-\section{Desindexação de requisitos}
-Como forma de tornar os requisitos indexados em requisitos absolutos, durante a semana 1, foi feita um estudo completo da aplicação já existente, da sua base de dados e dos restantes requisitos indexados.
-Concluída a analise foi desenvolvido um documento de proposta referente à plataforma e ferramentas a utilizar no desenvolvimento do sistema de informação. Esse documento cobria os seguintes aspetos:
+Antes de iniciar qualquer tipo de desenvolvimento ou implementação, era fulcral definir uma lista de requisitos, que descreve-se de uma forma muito exata e clara o que se esperava que a solução implementada fosse. Logo na primeira reunião foi entregue um primeira lista de requisitos. Esta lista foi dividida em dois tipos diferentes: os primeiros são designados por Requisitos Absoluto e são requisitos com um grande nível de detalhe sobre as suas características e perspetivas. Os segundos são designados por Requisitos Indexados e são requisitos sobre os quais não se tem certeza sobre a totalidade das suas características ou dependem da informações externas. Os requisitos pertencentes a este último grupo devem passar por um processo de definição de modo a que se tornem requisitos absolutos.
+Na primeira reunião com a administração foi entregue uma primeira lista de requisitos.\\
+\\
+Requisitos absolutos:
 \begin{itemize}
-    \item \textbf{Tipo de Aplicação:} Aplicação Web, construida em PHP com framework Laravel e Javascript ou Aplicação Desktop em Java mais aplicação Android
-    \item \textbf{Sistema operativo do Servidor:} Windows Server ou Ubuntu Server
-    \item \textbf{Sistema de Gestão de Base de Dados:} Microsoft SQL Server ou MySQL
-    \item \textbf{Tipo de plataforma:} Servidor virtual ou físico
+	\item A aplicação só poderia ser acessível da rede interna
+	\item Uso de uma base de dados relacional
+	\item Registo do horário de entrada e saída dos colaboradores
+	\item Registo do peso e ponto de recolha de onde vinha a matéria prima
+	\item Registo do peso de cera, metal e plástico de uma produção, bem como o colaborador associado.
+	\item Registo do peso do produto final acabado
+	\item Registo da saída de produto acabado e cliente a quem foi vendido
+	\item Impressão de uma segunda via dos códigos de barras já impressos referente a uma recolha ou um produto acabado
+	\item Incremento do peso de uma recolha efetuada anteriormente.
+	\item Zona protegida por ID e Password para a consulta dos registos feitos
+	\item Possibilidade de editar e apagar registos já feitos.
+	\item Script de analise da coerência dos dados registados.
 \end{itemize}
-O documento foi concluído com a proposta de se utilizar um servidor virtual com o Ubuntu para alojar a base de dados MySQL e a aplicação web.
-A segunda reunião da semana foi exclusivamente para a discussão da proposta e das outras alternativas levantadas. A administração decidiu optar por uma aplicação web, mas demonstrou preferência pelo o sistema de gestão de base de dados Microsoft SQL Server. Aqui levantou-se a questão do Microsoft SQL Server poder ser usado num servidor com Ubuntu. Confirmada essa questão a administração decidiu usar um servidor físico com Ubuntu Server na versão 18.04.
+Requisitos indexados:
+\begin{itemize}
+	\item Melhoria do design da base de dados
+	\item A aplicação deveria ser acessível em dispositivos moveis e computadores
+	\item Incremento do peso de uma recolha
+\end{itemize}
+Terminada esta reunião foi iniciado um processo de estudo do sistema atualmente implementado, o funcionamento da fábrica de forma a desindexar os requisitos indexados e determinar novos requisitos por forma a ter a melhor descrição possível do sistema a ser implementado.
 
-Após esta reunião seguiu-se uma terceira reunião onde foi apresentada a proposta de estrutura da nova base de dados, descrita na figura \ref{fig:db_model old}.
-\newpage
-\begin{figure}[H] 
-    \begin{center}
-    % \includegraphics[width=\textwidth,keepaspectratio]{figuras/DB_Model/old.png}
-    \includegraphics[width=\textwidth,keepaspectratio]{figuras/DB_Model/old.png}
-    \caption{Primeiro modelo de base de dados apresentado}\label{fig:db_model old} 
-    \end{center}
+\section{Estudo do sistema existente}
+O sistema existente na empresa, conforme descrito anteriormente, foi construído com recurso ao Microsoft Access. Era compostos por 5 ecrãs destintos utilizados para recolher a informação gerada na fábrica. Um dos aspetos que são evidentes desde inicio é a não coesão visual dos elementos.
+
+\begin{figure}[h!]
+	\centering
+	
+	\begin{subfigure}[c]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{figuras/AppAccess/0-MenuInicial.jpg}
+		\caption{Menu incial}
+	\end{subfigure}
+	\begin{subfigure}[c]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{figuras/AppAccess/1-Ponto.jpg}
+		\caption{Ecrã de marcação do ponto}
+	\end{subfigure}
+	\begin{subfigure}[c]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{figuras/AppAccess/2-Recolha.jpg}
+		\caption{Ecrã do registo de recolha}
+	\end{subfigure}
+	\begin{subfigure}[c]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{figuras/AppAccess/3-Producao.jpg}
+		\caption{Ecrã do registo de produção}
+	\end{subfigure}
+	\begin{subfigure}[c]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{figuras/AppAccess/4-ProdutoAcabado.jpg}
+		\caption{Ecrã do registo de produto acabado}
+	\end{subfigure}
+	\begin{subfigure}[c]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{figuras/AppAccess/5-SaidaProdutoAcabado.jpg}
+		\caption{Ecrã do registo de saída de produto acabado}
+	\end{subfigure}
+	
+	\caption{Ecrãs da aplicação existe na empresa.}
+	\label{fig:app_access}
 \end{figure}
 
-Após a analise da administração, a reestruturação foi reprovada. Um dos motivos apresentados foi a separação dos tipos de fornecedores em tabelas distintas. De forma a manter uma maior compatibilidade com algumas ferramentas de analise já implementadas a administração optou por manter um campo na tabela pontos de recolha onde iria descrever o tipo de ponto de recolha. Durante esta reunião, discutiu-se ainda a funcionalidade de incremento do peso de uma recolha. Esta fazia-se necessária quando alguma recolha superasse a quantidade de material que era possível pesar de uma só vez. Para contornar este problema chegou-se à decisão de implementar um incrementador do peso de uma recolha com base no código já impresso.  Deveria ainda existir uma tabela extra na base de dados para registar o histórico de incrementos numa determinada recolha, de forma a auxiliar o operador, no momento do registo, a saber se aquele peso já tinha sido registado. Feitas as alterações indicadas pela administração, a estrutura da base de dados, descrita na figura \ref{fig:fig:db_model new}, foi aprovada.
-\newpage
-\begin{figure}[H] 
-    \begin{center}
-    % \includegraphics[width=\textwidth,keepaspectratio]{figuras/DB_Model/new.png}
-    \includegraphics[width=\textwidth,keepaspectratio]{figuras/DB_Model/new.png}
-    \caption{Segundo modelo de base de dados apresentado}\label{fig:fig:db_model new} 
-    \end{center}
+O fluxo dentro deste sistema era bastante simples também. Ao executar o ficheiro Microsoft Access, era apresentado diretamente o menu ao utilizador. Este selecionaria a opção referente ao registo que pretendia fazer e era apresentada numa nova janela o formulário correspondente. O utilizador preenchia com os dados requeridos e pressionava o botão "Gravar". Em caso de sucesso não era apresentado nenhuma mensagem. Em caso de erro era apresentada uma mensagem de a informar do erro. Esta mensagem era gerada diretamente pelo sistema de gestão de base de dados, que não eram intuitivas. No caso de ser o registo de recolha ou de produto acabado, era ainda apresentado, numa nova janela um código de barras que seria impresso para identificar on elemento registado (figura \ref{fig:app_access_cb}). Estes códigos de barras deveriam ter estruturas diferentes. O código de barras referente à recolha (figura \ref{fig:app_access_cb} a) deveria ser constituído pelo código de barras correspondente ao ID, o ID do ponto de recolha e a data da recolha. Já no produto acabado era apenas apresentado o código de barras referente ao ID (figura \ref{fig:app_access_cb} b). A pedido da administração deveria passar a ser apresentado o código de barras em formato numérico no caso do produto acabado.
+
+\begin{figure}[H]
+	\centering
+	
+	\begin{subfigure}[t]{0.4\linewidth}
+		\includegraphics[width=\linewidth]{figuras/AppAccess/2-CodBarras.jpg}
+		\label{fig:app_access_cb_recolha}
+		\caption{Recolha}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.4\linewidth}
+		\includegraphics[width=\linewidth]{figuras/AppAccess/5-CodBarras.jpg}
+		\label{fig:app_access_cb_prod_acabado}
+		\caption{Produto Acabado}
+	\end{subfigure}
+	
+	\caption{Exemplo dos códigos de barras gerados}
+	\label{fig:app_access_cb}
 \end{figure}
 
-Ao longo destas reuniões foram ainda levantados alguns novos requisitos para o projeto.
-\newpage
+Após o estudo da aplicação foi iniciado o estudo da base de dados. Este estudo consistiu em compreender as tabelas que constituem base de dados, as suas relações e a informação que nelas é registada. Foi solicitado pela empresa sugestões de melhoria do design da base de dados com foco na coerência da informação registada.
+
+\section{Normalização da base de dados}
+O estudo da base de dados existente e consequente \textit{redesign} levou à entrega de uma proposta da nova estrutura. Esta foi chumbada numa fase inicial porque, como resultado da normalização, foi criada uma tabela destinada a armazenar os cemitérios com os quais a empresa tem parceria, uma segunda tabela onde ficaram registadas as empresas a quem a Natural Life compra o materia-prima e uma terceira tabela responsável por agregar os registos das primeiras duas de modo a estabelecer as relações com a restantes tabelas do sistema. A reposta da administração foi que preferia que existisse apenas uma única tabela, que agregasse os campos das três referidas anteriormente, com um campo extra para distinguir o tipo de registo. Apesar de compreenderem qual era o intuito da mudança sugerida, esta iria tornar mais difícil a adaptação de ficheiros Excel e PowerBi já existentes. A mudança pedida foi efetuada e a administração aceitou as restantes alterações sugeridas. Dentre dela destaca-se a tabela "Entidades" criada para armazenar as informações de identificação (nome, morada, código postal e nif) dos pontos de recolha e clientes. Esta alteração permitiu não só reunir num único local a lista de entidades com as quais a Natural Life interage, eliminado eventuais incoerências de informação a respeito do numero de identificação fiscal, por exemplo.
+
+\section{Modo de implementação do projeto}
+Numa das reuniões discutiu-se o modo como o novo sistema deveria ser implementado. No dia em que ocorresse a primeira implementação do novo sistema, este deveria substituir por completo a aplicação construída no Microsoft Access. Isto porque devido à natureza da informação registada e tendo em conta que a base de dados teria a sua estrutura modificada, não era possível existir um período hibrido onde as duas aplicações coexistiram. Assim ficou definido que enquanto o novo sistema não fosse capaz de registar o ponto dos colaboradores, as recolhas efetuadas, as produções feitas, o produto finalizado e a sua saída, a implementação não iria ocorrer. Devido a este motivo um novo requisito foi criado: A aplicação deveria passar por um rigoroso conjunto de testes, que evolvessem não so a validação da informação registada como da experiencia de utilização de forma a minimizar ao máximo situações de erro que obrigassem a empresa a parar a sua atividade para corrigir a falha. Este testes deveriam ser independentes dos testes feitos no desenvolvimento e seriam feitos pelos elementos da administração e numa fase posterior, por alguns colaboradores de empresa num ambiente de teste.
+
+\section{Último levantamento de requisito}
+Todos os requisitos da aplicação ficaram definidos no final da primeira semana, à excepção dos requisitos referentes a uma funcionalidade de nova que a administração pretendia implementar, o incremento do peso de uma recolha. Em algumas recolhas efetuada, o peso total da recolha superava a capacidade de ser pesado de uma so vez, seja pelo peso de matéria prima seja pela quantidade. Apesar de estar consciente desta necessidade a administração sugeriu deixar a discussão sobre esta nova funcionalidade para o pós primeira implementação. Não se tratava de uma funcionalidade fundamental para o sistema e como tal havia a intenção de estudar a melhor forma de implementar esta solução. Solução essa que foi discutida na sétima semana do período de estágio. Consistiu na criação de uma nova tabela "Completar Recolha" que iria armazenar o histórico de incrementos feitos numa recolha, para assim poder identificar eventuais erros no registos da informação. Do ponto de vista da aplicação a recolha a ser incrementada seria identificada pelo código de barras impresso anteriormente e deveria ser apresentado ao utilizador o histórico de incrementos referente a essa recolha. Por fim definiu-se que uma recolha registada com o peso de zero quilos deveria redirecionar automaticamente o utilizador para o ecrã do incremento desta recolha após a impressão do primeiro código de barras.
+
 \section{Lista final de requisitos}
-Após as 4 reuniões de levantamento de requisitos, chegou-se à seguinte lista composta apenas por requisitos absolutos.
+Após as todas as reuniões de levantamento de requisitos, chegou-se à seguinte lista composta apenas por requisitos absolutos.
 \begin{itemize}
-    \item A aplicação só poderia ser acessível da rede interna
-    \item Aplicação alojada num servidor físico com Ubuntu Server 18.04
-    \item Aplicação WEB desenvolvida em PHP, com o framework Laravel, e em Javascrip.
-    \item Uso de uma base de dados relacional, construida com o sistema de gestão de base de dados Microsoft SQL Server e a estrutura aprovada pela administração.
-    \item A implementação teria de ser feita em duas fases, uma primeira onde se substituía totalmente a aplicação existente na fabrica, de modo a não parar o trabalho da fábrica ou ter de usar duas aplicações e uma segunda fase durante a qual as novas funcionalidades seriam aplicadas incrementalmente
-    \item Devido à utilização de uma base de dados completamente reestruturada, antes da primeira implementação a aplicação teria de passar por uma fase de testes muito exigente para impedir erros que obrigassem ao uso da base de dados antiga.
-    \item Registo do horário de entrada e saída dos colaboradores
-    \item Registo do peso e ponto de recolha de onde vinha a matéria prima
-    \item Possibilidade de incrementar o peso de uma recolha
-    \item Se a recolha fosse iniciada com 0kg (zero quilogramas) é iniciado automaticamente o processo de incremento do peso da recolha que acabou de ser registada.
-    \item Impressão de um código de barras com o ID gerado para a recolha inserida
-    \item Registo do peso de cera, metal e plástico de uma produção, bem como o colaborador associado.
-    \item Registo do peso do produto final acabado
-    \item Impressão de um código de barras com o ID gerado para a produto final acabado
-    \item Registo da saída de produto acabado e cliente a quem foi vendido
-    \item Impressão de uma segunda via dos códigos de barras já impressos referente a uma recolha ou um produto acabado
-    \item Incremento do peso de uma recolha efetuada anteriormente.
-    \item Zona protegida por ID e Password para a consulta dos registos feitos
-    \item As tabelas apresentadas na interface da aplicação teriam de ser capazes de refletir alterações na estrutura das tabelas da base de dados.
-    \item Possibilidade de registar e apagar utilizadores na plataforma.
-    \item Possibilidade de registar e apagar colaboradores.
-    \item Possibilidade de registar e apagar Pontos de Recolha.
-    \item Possibilidade de registar e apagar Clientes.
-    \item Possibilidade de editar e apagar registos já feitos.
-    \item Possibilidade de inserir/editar/apagar/executar comandos SQL personalizados.
-    \item Script de analise da coerência dos dados registados.
+	\item A aplicação só poderia ser acessível da rede interna
+	\item Aplicação alojada num servidor físico com Ubuntu Server 18.04
+	\item Aplicação WEB desenvolvida em PHP, com o framework Laravel, e em Javascrip.
+	\item Uso de uma base de dados relacional, construida com o sistema de gestão de base de dados Microsoft SQL Server e a estrutura aprovada pela administração.
+	\item A implementação teria de ser feita em duas fases, uma primeira onde se substituía totalmente a aplicação existente na fabrica, de modo a não parar o trabalho da fábrica ou ter de usar duas aplicações e uma segunda fase durante a qual as novas funcionalidades seriam aplicadas incrementalmente
+	\item Devido à utilização de uma base de dados completamente reestruturada, antes da primeira implementação a aplicação teria de passar por uma fase de testes muito exigente para impedir erros que obrigassem ao uso da base de dados antiga.
+	\item Os teste que irão aprovar a passagem do novo sistema ao estado de produção deverão ser independestes do testes de desenvolvimento e serão feitos, numa primeira fase pela administração. Quando atingirem um nível de maturidade que satisfaz as expectativas da administração a aplicação deverá ser testada, num ambiente de testes, por alguns colaboradores da empresa.
+	\item O sistema tem de ser graficamente coeso
+	\item Mensagens do sistema após cada ação
+	\item Mensagens com linguagem simples e direta
+	\item Registo do horário de entrada e saída dos colaboradores
+	\item Registo do peso e ponto de recolha de onde vinha a matéria prima
+	\item Possibilidade de incrementar o peso de uma recolha
+	\item Se a recolha fosse iniciada com 0kg (zero quilogramas) é iniciado automaticamente o processo de incremento do peso da recolha que acabou de ser registada.
+	\item Impressão de um código de barras com o ID gerado para a recolha inserida, id do ponto de recolha e data de recolha
+	\item Registo do peso de cera, metal e plástico de uma produção, bem como o colaborador associado.
+	\item Registo do peso do produto final acabado
+	\item Impressão de um código de barras com o ID gerado para a produto final acabado
+	\item Registo da saída de produto acabado e cliente a quem foi vendido
+	\item Impressão de uma segunda via dos códigos de barras já impressos referente a uma recolha ou um produto acabado
+	\item Incremento do peso de uma recolha efetuada anteriormente.
+	\item Após o incremento do peso deveria ser impresso uma segunda via do código de barras dessa mesma recolha.
+	\item Zona protegida por ID e Password para a consulta dos registos feitos
+	\item As tabelas apresentadas na interface da aplicação teriam de ser capazes de refletir alterações na estrutura das tabelas da base de dados.
+	\item Possibilidade de registar e apagar utilizadores na plataforma.
+	\item Possibilidade de registar e apagar colaboradores.
+	\item Possibilidade de registar e apagar Pontos de Recolha.
+	\item Possibilidade de registar e apagar Clientes.
+	\item Possibilidade de editar e apagar registos já feitos.
+	\item Possibilidade de inserir/editar/apagar/executar comandos SQL personalizados.
+	\item Script de analise da coerência dos dados registados.
 \end{itemize}
-
-
-\section{Metodologia de gestão de Projetos}
-A metodologia de gestão de projetos escolhida foi o Scrum. As reuniões com o \textit{product owner}, que neste caso seria a administração, ficaram marcadas para a sexta feira ao fim do dia. Nestas reuniões seriam apresentados os desenvolvimentos da semana e definido o trabalho para a semana seguinte.
-Sem prejuízo destas reuniões, diariamente havia uma reunião apenas com o supervisor da empresa como forma de ter informação mais atualizada.
-Relativamente ao lançamento de novas versões para produção a metodologia foi diferente em dois momentos:
-\begin{itemize}
-    \item Antes da substituição da aplicação de fábrica em produção: Até que todas as funcionalidades da aplicação estivessem disponíveis, as indicações eram para não disponibilizar nenhuma versão.
-    \item Após da substituição da aplicação de fábrica em produção: Após a aplicação de fábrica estar em produção, o lançamento de novas funções seria feito após a reunião com o supervisor, para que as funcionalidades ficassem disponíveis o mais rápido possível.
-\end{itemize}
-
-\section{Plataforma e ferramentas de desenvolvimento}
-Para o desenvolvimento do projeto utilizou-se um conjunto alargado de ferramentas.
-\subsection{Linguagens de Programação}
-Tratando-se de uma aplicação web, optou-se pela linguagem de programação PHP em conjunto com o framework Laravel para o \textit{backend}\label{sym:BACKEND}, pela sua robustez e  maturidade\cite{Mansuri2018}.O \textit{frontend}\label{sym:FRONTEND} ficaria a cargo do Javascript com o framework jQuery e o \textit{template} AdminLTE.
-
-\subsection{Base de dados}
-Como definido nos requisitos, o Sistema de Gestão de Base de Dados escolhido foi o Microsoft SQL Server e a aplicação para gerir a base de dados foi o SQL Server Management Studio.
-
-\subsection{Versionamento}
-Para gerir as versões do código fonte, foi utilizado um repositório privado no GitHub, com duas \textit{banches}\label{sym:BRANCH}: master e release.
-Na \textit{banches} master era colocado o código que ia sendo desenvolvido e na release era colocado o código testado e pronto a ir para produção.
-Como cliente para este serviço foi utilizado o GitKraken.
