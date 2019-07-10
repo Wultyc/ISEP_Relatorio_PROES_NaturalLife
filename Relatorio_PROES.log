@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.9)  9 JUL 2019 21:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.9)  10 JUL 2019 11:58
 entering extended mode
 **./Relatorio_PROES.tex
 (Relatorio_PROES.tex
@@ -1565,42 +1565,51 @@ Overfull \vbox (13.99997pt too high) has occurred while \output is active []
 ] [12
 
 ] (Capitulo_1.tex
+<figuras/PlantaNaturalLife.png, id=313, 1598.97375pt x 720.6925pt>
+File: figuras/PlantaNaturalLife.png Graphic file (type png)
+<use figuras/PlantaNaturalLife.png>
+Package pdftex.def Info: figuras/PlantaNaturalLife.png  used on input line 17.
+(pdftex.def)             Requested size: 420.0pt x 189.30008pt.
 
-LaTeX Warning: Marginpar on page 1 moved by 7.19656pt.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[1
+ [1
 
 
 ]
-<figuras/DiagramaGant.jpg, id=316, 608.2725pt x 237.13594pt>
+Overfull \vbox (13.99997pt too high) has occurred while \output is active []
+
+
+[2 <./figuras/PlantaNaturalLife.png>]
+<figuras/DiagramaGant.jpg, id=328, 608.2725pt x 237.13594pt>
 File: figuras/DiagramaGant.jpg Graphic file (type jpg)
 <use figuras/DiagramaGant.jpg>
-Package pdftex.def Info: figuras/DiagramaGant.jpg  used on input line 33.
+Package pdftex.def Info: figuras/DiagramaGant.jpg  used on input line 39.
 (pdftex.def)             Requested size: 420.0pt x 163.73975pt.
 LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10.95> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 47.
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 53.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 39--64
+Underfull \hbox (badness 10000) in paragraph at lines 45--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--64
+Underfull \hbox (badness 10000) in paragraph at lines 45--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--64
+Underfull \hbox (badness 10000) in paragraph at lines 45--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--64
+Underfull \hbox (badness 10000) in paragraph at lines 45--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--64
+Underfull \hbox (badness 10000) in paragraph at lines 45--64
 
  []
 
@@ -1608,15 +1617,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--64
 Overfull \vbox (13.99997pt too high) has occurred while \output is active []
 
 
-[2 <./figuras/DiagramaGant.jpg>] (Capitulo_2.tex
-<figuras/AppAccess/0-MenuInicial.jpg, id=322, 384.6872pt x 325.215pt>
+[3 <./figuras/DiagramaGant.jpg>] [4
+
+] (Capitulo_2.tex
+<figuras/AppAccess/0-MenuInicial.jpg, id=338, 384.6872pt x 325.215pt>
 File: figuras/AppAccess/0-MenuInicial.jpg Graphic file (type jpg)
 <use figuras/AppAccess/0-MenuInicial.jpg>
 Package pdftex.def Info: figuras/AppAccess/0-MenuInicial.jpg  used on input lin
 e 12.
 (pdftex.def)             Requested size: 315.0pt x 266.32072pt.
- [3
-
+ [5
 
  <./figuras/AppAccess/0-MenuInicial.jpg>]
 LaTeX Font Info:    Try loading font information for OMS+aess on input line 24.
@@ -1632,15 +1642,15 @@ LaTeX Font Warning: Font shape `OMS/aess/m/n' undefined
 Overfull \vbox (13.99997pt too high) has occurred while \output is active []
 
 
-[4] (Capitulo_3.tex [5
+[6] (Capitulo_3.tex [7
 
 
 ]
 Overfull \vbox (13.99997pt too high) has occurred while \output is active []
 
 
-[6]
-<figuras/DB_Model/old.png, id=342, 911.405pt x 649.42625pt>
+[8]
+<figuras/DB_Model/old.png, id=358, 911.405pt x 649.42625pt>
 File: figuras/DB_Model/old.png Graphic file (type png)
 <use figuras/DB_Model/old.png>
 Package pdftex.def Info: figuras/DB_Model/old.png  used on input line 48.
@@ -1649,8 +1659,8 @@ Package pdftex.def Info: figuras/DB_Model/old.png  used on input line 48.
 Overfull \vbox (13.99997pt too high) has occurred while \output is active []
 
 
-[7 <./figuras/DB_Model/old.png>]
-<figuras/DB_Model/new.png, id=348, 1303.87125pt x 772.8875pt>
+[9 <./figuras/DB_Model/old.png>]
+<figuras/DB_Model/new.png, id=364, 1303.87125pt x 772.8875pt>
 File: figuras/DB_Model/new.png Graphic file (type png)
 <use figuras/DB_Model/new.png>
 Package pdftex.def Info: figuras/DB_Model/new.png  used on input line 58.
@@ -1659,51 +1669,51 @@ Package pdftex.def Info: figuras/DB_Model/new.png  used on input line 58.
 Overfull \vbox (13.99997pt too high) has occurred while \output is active []
 
 
-[8 <./figuras/DB_Model/new.png>]
+[10 <./figuras/DB_Model/new.png>]
 Overfull \vbox (13.99997pt too high) has occurred while \output is active []
 
 
-[9])
+[11])
 Overfull \vbox (13.99997pt too high) has occurred while \output is active []
 
 
-[10] (Capitulo_4.tex) [11
+[12] (Capitulo_4.tex) [13
 
-
-] [12
-
-] (Capitulo_5.tex) [13
 
 ] [14
+
+] (Capitulo_5.tex) [15
+
+] [16
 
 ] (Capitulo_6.tex)
 Underfull \vbox (badness 3792) has occurred while \output is active []
 
- [15
+ [17
 
 ]
 Overfull \vbox (13.99997pt too high) has occurred while \output is active []
 
 
-[16] (Relatorio_PROES.bbl
+[18] (Relatorio_PROES.bbl
 bibitemlist
-) [17
+) [19
 
-
-] [18
-
-] (Anexo_A.tex) [19
 
 ] [20
 
-] (Anexo_B.tex) [21
+] (Anexo_A.tex) [21
 
 ] [22
 
-] (Anexo_C.tex)
-[23
+] (Anexo_B.tex) [23
 
 ] [24
+
+] (Anexo_C.tex)
+[25
+
+] [26
 
 ]
 
@@ -1727,7 +1737,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 90.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 90.
 Package rerunfilecheck Info: File `Relatorio_PROES.out' has not changed.
-(rerunfilecheck)             Checksum: BEA17F3DC5BF7C98E10F01D378B7624B;2622.
+(rerunfilecheck)             Checksum: 7F43E9789BDA5741C71A296CE7A44048;2622.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1735,13 +1745,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 90.
  ) 
 Here is how much of TeX's memory you used:
- 36107 strings out of 492895
- 688503 string characters out of 3133480
- 744353 words of memory out of 3000000
- 39344 multiletter control sequences out of 15000+200000
+ 36106 strings out of 492895
+ 688492 string characters out of 3133480
+ 742292 words of memory out of 3000000
+ 39339 multiletter control sequences out of 15000+200000
  591858 words of font info for 139 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
- 71i,12n,81p,1184b,923s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 71i,12n,81p,1184b,921s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 
@@ -1751,9 +1761,9 @@ ublic/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi
 10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Relatorio_PROES.pdf (38 pages, 421901 bytes).
+Output written on Relatorio_PROES.pdf (40 pages, 494685 bytes).
 PDF statistics:
- 477 PDF objects out of 1000 (max. 8388607)
- 89 named destinations out of 1000 (max. 500000)
- 446 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 494 PDF objects out of 1000 (max. 8388607)
+ 92 named destinations out of 1000 (max. 500000)
+ 451 words of extra memory for PDF output out of 10000 (max. 10000000)
 
