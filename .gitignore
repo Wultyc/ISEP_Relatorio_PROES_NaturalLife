@@ -1,16 +1,16 @@
 
-Relatorio_PROES\.aux
+*.aux
 
-Relatorio_PROES\.lof
+*.lof
 
-Relatorio_PROES\.log
+*.log
 
-Relatorio_PROES\.lot
+*.lot
 
-Relatorio_PROES\.out
+*.out
 
-Relatorio_PROES\.pdf
+*.pdf
 
-Relatorio_PROES\.synctex\.gz
+*.synctex\.gz
 
-Relatorio_PROES\.toc
+*.toc
