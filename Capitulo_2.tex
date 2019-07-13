@@ -25,6 +25,8 @@ Dentro deste pacote de software existem as seguintes aplicações:
 Este pacote está disponível em várias edições nas quais varia as funcionalidades disponíveis de modo a se ajustar melhor às necessidades da empresa.
 
 \section{Tabela comparativa}
+A informação coletada sobre as diferentes opções foi colocada na tabela \ref{tab:opcoes_mercado}
+
 \begin{table}[H]
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|l|c|c|c|c|}
@@ -32,7 +34,7 @@ Este pacote está disponível em várias edições nas quais varia as funcionali
 			Característica & SAP & Primavera Executive & Microsoft Dynamics & Solução Própria\\ \hline
 			Funções de gestão de recursos da empresa
 										& \ding{51} & \ding{51} & \ding{51} & \ding{51} \\ \hline
-			Acesso remoto externo		& \ding{53} & \ding{51} & \ding{51} & \ding{53}\\ \hline
+			Acesso remoto externo		& \ding{51} & \ding{51} & \ding{51} & \ding{53}\\ \hline
 			Suporte técnico de terceiros& \ding{51} & \ding{51} & \ding{51} & \ding{53}\\ \hline
 			Controlo do desenvolvimento & \ding{53} & \ding{53} & \ding{53} & \ding{51}\\ \hline
 			Atualizações do sistema		& \ding{51} & \ding{51} & \ding{51} & tem de as desenvolver\\ \hline
@@ -40,9 +42,63 @@ Este pacote está disponível em várias edições nas quais varia as funcionali
 										& \ding{53} & \ding{53} & \ding{53} & \ding{51}\\ \hline
 			Implementação apenas dos recursos necessário
 										& \ding{53} & \ding{53} & \ding{53} & \ding{51}\\ \hline
-		\end{tabular}%
+		\end{tabular}
+	%
 	}
+	\caption{Tabela resumo das opções}
+	\label{tab:opcoes_mercado}
 \end{table}
 
 \section{Opção escolhida}
-No final desta analise, o caminho definido para o projeto foi a criação de uma nova plataforma, sendo que essa era a intenção da empresa desde o incio. Por esse motivo foi feita uma nova analise de opções à cerca do desenvolvimento da plataforma. Este documento foi entregue à administração para que o analisa-se o decidisse o modo como a aplicação deveria ser desenvolvida. O documento entregue esta presente no \hyperref[anexo:A]{Anexo A}.
+No final desta analise, o caminho definido para o projeto foi a criação de uma nova plataforma, sendo que essa era a intenção da empresa desde o incio. Por esse motivo foi feita uma nova analise de opções à cerca do desenvolvimento da plataforma. Este documento foi entregue à administração para que o analisa-se o decidisse o modo como a aplicação deveria ser desenvolvida. O documento entregue esta presente no \hyperref[anexo:A]{Anexo A}. Desse documento é possível extrair a tabela comparativa com as diferentes opções para o desenvolvimento da plataforma. Essa tabela é apresentada na tabela \ref{tab:opcoes_dev}.
+
+
+\begin{longtable}{|p{0.20\textwidth}|p{0.15\textwidth}|p{0.25\textwidth}|p{0.25\textwidth}|}
+	\hline
+	& Opção                                                 & Vantagens                                                           & Desvantagens                                                                                        \\ \hline
+	\multirow{6}{*}{Tipo de Aplicação}                                      & \multirow{3}{*}{Desktop}                              &                                                                     & Necessidade de configurar cada computador que receber a aplicação                                   \\
+	&                                                       &                                                                     & Parar o computador para atualizar a aplicação                                                       \\
+	&                                                       &                                                                     & Necessidade de um servidor de base de dados                                                         \\ \cline{2-4}
+	& \multirow{3}{*}{Web}                                  & Acesso direto em qualquer computador                                & Necessidade de um servidor web e de base de dados                                                   \\
+	&                                                       & Maior familiaridade com a plataforma por parte de programador       &                                                                                                     \\
+	&                                                       & Menos pontos de falha                                               &                                                                                                     \\ \hline
+	
+	\multirow{5}{*}{Sistema Operativo}                                      & \multirow{3}{*}{Windows 10}                           & Familiaridade com o sistema                                         & Necessidade de comprar uma licença do Windows Server                                                \\
+	&                                                       & Todas as máquinas já executam esta plataforma                       & Necessidade de aprender ASP.NET ou usar o XAMPP                                                     \\
+	&                                                       &                                                                     & Se não for usado só software Microsoft não há garantias de segurança/ compatibilidade com o Windows \\ \cline{2-4} 
+	& \multirow{2}{*}{Ubuntu 18.04}                         & Plataforma líder de mercado                                         & Curva de aprendizagem para manutenção básica                                                        \\
+	&                                                       & Milhares de pacotes no repositório que são revisados pela Canonical &                                                                                                     \\ \hline
+	
+	\multirow{10}{*}{\specialcell{Sistema de Gestão\\de\\Base de Dados}}    & \multirow{3}{*}{\specialcell{Microsoft SQL\\Server}}  & Familiaridade com o software                                        & Versão Express limitada.                                                                            \\
+	&                                                       & Versão Express gratuita                                             & Versões Enterprise e Standard pagas                                                                 \\
+	&                                                       &                                                                     & Versão Developer não utilizável em produção                                                         \\ \cline{2-4}
+	& \multirow{7}{*}{MariaDB}                              & Gratuito (versão Open Source)                                       & Não possui um ficheiro único para a base de dados.                                                  \\
+	&                                                       & Totalmente compatível com MySQL da Oracle                           & Tem de ser instalado manualmente no Windows ou usado com recurso ao XAMPP                           \\
+	&                                                       & Padrão no Ubuntu e no XAMPP                                         &                                                                                                     \\
+	&                                                       & Escalável                                                           &                                                                                                     \\
+	&                                                       & Fiável                                                              &                                                                                                     \\
+	&                                                       & Recursos semelhante ao MS SQL Server                                &                                                                                                     \\
+	&                                                       & Suporte nativo no Ubuntu                                            &                                                                                                     \\ \hline
+	
+	\multirow{5}{*}{Tipo de Máquina}                                        & \multirow{2}{*}{Real}                                 & Não dependência da operação de outras máquinas                      & Hardware dedicado                                                                                   \\
+	&                                                       &                                                                     &                                                                                                     \\ \cline{2-4}
+	& \multirow{3}{*}{Virtual}                              & Não necessita de hardware dedicado.                                 & Exige que o utilizador que esta a executar a VM nunca termine a sessão.                             \\
+	&                                                       & Várias instâncias da máquina ao mesmo tempo.                        & Se a máquina real tiver de ser reiniciada, a VM tem de ser interrompida                             \\
+	&                                                       & Backup muito fácil.                                                 & Partilha dos recursos da máquina hospedeira com a maquina virtual.                                  \\
+	\hline
+	\caption{Tabela resumo das opções}
+	\label{tab:opcoes_dev}
+\end{longtable}
+
+
+
+\section{Analise das opções disponíveis}
+O documento entregue incide sobre os aspetos base para a criação do sistema de informação: tipologia de aplicação, servidor, sistema de gestão de base de dados, linguagens de programação.
+
+O primeiro a ser definido seria o tipologia de aplicação. Decidir sobre uma aplicação web ou uma plicação desktop poderia condicionar o trabalho futuro. Aqui a sugestão passou pelo desenvolvimento de uma aplicação web, pois esta seria agnóstica de equipamento o que dava uma grande flexibilidade no futuro. Além deste fator, já se sabia que teria de existir uma máquina servidor pois teria de haver uma base de dados centralizada, logo não havia nenhum gasto extra com esta solução. Esta sugestão acabou por ser aceite, em conjunto com as linguagens de programação PHP para o back-end e JavaScript para o front-end. Ficou ainda decidido que de modo a tornar o desenvolvimento mais ágil e dar robustez ao serviço, devia ser utilizado o framework Laravel. Esta escolha assentou no facto deste framework já ser bastante utilizado e testado ao redor do mundo. Inclusive é tido como escolha de referencia para projetos de missão crítica em PHP pelas suas características de segurança\cite{Mansuri2018}.
+
+Segundo ponto a ser definido foi o sistema de gestão de base de dados. Apesar das vantagens enunciadas em relação ao MariaDB, a opção opção recaiu sobre o Microsoft SQL Server. Quanto ao sistema operativo do servidor a opção tomada foi o Ubuntu Server 18.04 em maquina física, pois havia a intenção por parte da administração em separar o servidor de qualquer outra máquina já existente.
+Um tópico que não foi considerado neste documento foi o sistema e serviço de versionamento. A administração optou por deixar à escolha do estudante desde que o houvesse a garantia de o repositório ser um repositório privado, uma vez que tirando o facto de ser um repositório privado, esta opção em nada influenciava o sistema a ser implementado. Assim o sistema de versionamento escolhido foi o Git no serviço GitHub.
+
+\section{Resumo final das opções tomadas}
+Construir uma plataforma própria em formato de aplicação Web. Esta aplicação web seria construida em PHP, com o framework Laravel, para o backend e JavaScript frontend. O sistema de gestão de base de dados escolhido foi o Microsoft SQL Server na edição Express e o servidor seria uma máquina física com o sistema operativo Ubuntu 18.04. Para fazer o versionamento do código foi utilizado um repositório privado no serviço GitHub.
