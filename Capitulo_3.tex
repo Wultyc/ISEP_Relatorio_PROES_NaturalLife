@@ -1,5 +1,5 @@
 % ************ Chapter 3 ************
-\chapter{Estudo do sistema implementado} 
+\chapter{Requisitos} 
 \label{cap:3}
 %Pretendia-se que fosse desenvolvido um sistema de informação completo para armazenar os registos feitos na fábrica. 
 
@@ -65,7 +65,7 @@ O sistema existente na empresa, conforme descrito anteriormente, foi construído
 	\label{fig:app_access}
 \end{figure}
 
-O fluxo dentro deste sistema era bastante simples também. Ao executar o ficheiro Microsoft Access, era apresentado diretamente o menu ao utilizador. Este selecionaria a opção referente ao registo que pretendia fazer e era apresentada numa nova janela o formulário correspondente. O utilizador preenchia com os dados requeridos e pressionava o botão "Gravar". Em caso de sucesso não era apresentado nenhuma mensagem. Em caso de erro era apresentada uma mensagem de a informar do erro. Esta mensagem era gerada diretamente pelo sistema de gestão de base de dados, que não eram intuitivas. No caso de ser o registo de recolha ou de produto acabado, era ainda apresentado, numa nova janela um código de barras que seria impresso para identificar on elemento registado (figura \ref{fig:app_access_cb}). Estes códigos de barras deveriam ter estruturas diferentes. O código de barras referente à recolha (figura \ref{fig:app_access_cb} a) deveria ser constituído pelo código de barras correspondente ao ID, o ID do ponto de recolha e a data da recolha. Já no produto acabado era apenas apresentado o código de barras referente ao ID (figura \ref{fig:app_access_cb} b). A pedido da administração deveria passar a ser apresentado o código de barras em formato numérico no caso do produto acabado.
+O fluxo dentro deste sistema era bastante simples também. Ao executar o ficheiro Microsoft Access, era apresentado diretamente o menu ao utilizador. Este selecionaria a opção referente ao registo que pretendia fazer e era apresentada numa nova janela o formulário correspondente. O utilizador preenchia com os dados requeridos e pressionava o botão "Gravar". Em caso de sucesso não era apresentado nenhuma mensagem. Em caso de erro era apresentada uma mensagem de a informar do erro. Esta mensagem era gerada diretamente pelo sistema de gestão de base de dados e não eram intuitivas. No caso de ser o registo de recolha ou de produto acabado, era ainda apresentado, numa nova janela um código de barras que seria impresso para identificar on elemento registado (figura \ref{fig:app_access_cb}). Estes códigos de barras deveriam ter estruturas diferentes. O código de barras referente à recolha (figura \ref{fig:app_access_cb} a) deveria ser constituído pelo código de barras correspondente ao ID, o ID do ponto de recolha e a data da recolha. Já no produto acabado era apenas apresentado o código de barras referente ao ID (figura \ref{fig:app_access_cb} b). A pedido da administração deveria passar a ser apresentado o código de barras em formato numérico no caso do produto acabado.
 
 \begin{figure}[H]
 	\centering
