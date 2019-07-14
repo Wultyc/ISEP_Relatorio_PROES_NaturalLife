@@ -56,10 +56,13 @@ Enquanto as páginas relacionadas com a Aplicação Painel estavam sob o endere�
 A única exceção a esta regra está no diretório raiz do sistema, que direciona para a página index da Aplicação de Fábrica.\\
 Esta organização em nada muda a estrutura de ficheiros do projeto. O framework laravel, trás consigo um recurso de rotas, que permite facilmente que este tipo de regras seja incluída no projeto sem ter necessariamente que fazer modificações à árvore de diretórios da aplicação. Desta forma, manteve-se uma estrutura dos ficheiros da aplicação coesa, mantendo cada tipo de ficheiro na sua pasta definida e manter regras de padronização dos endereços da aplicação.
 
-\section{Funcionalidades do sistema}
-Definidos todos os detalhes supracitados, é possível dar inicio à definição de cada uma das funcionalidades do projeto. Esta definição serve como guia de desenvolvimento, mantendo as informações necessárias para se conhecer o comportamento esperado de cada uma das funcionalidades do sistema final.
+\section{Casos de uso do sistema}
+Definidos todos os detalhes supracitados, é possível dar inicio à definição de cada um dos casos de uso do projeto. Esta definição serve como guia de desenvolvimento, mantendo as informações necessárias para se conhecer o comportamento esperado de cada um dos casos de uso do sistema final e é explicada nas próximas páginas.
 \newpage
 
+% Aplicação Fábrica
+\input{funcionalidades/f0-menu_inicial.tex}
+\newpage
 \input{funcionalidades/f1-marcar_ponto.tex}
 \newpage
 \input{funcionalidades/f2-registo_recolha.tex}
@@ -74,6 +77,8 @@ Definidos todos os detalhes supracitados, é possível dar inicio à definição
 \newpage
 \input{funcionalidades/f7-completar_recolha.tex}
 \newpage
+
+% Aplicação Painel
 \input{funcionalidades/p1-listagem.tex}
 \newpage
 \input{funcionalidades/p2-inserir.tex}
@@ -85,4 +90,3 @@ Definidos todos os detalhes supracitados, é possível dar inicio à definição
 \input{funcionalidades/p5-desativar.tex}
 \newpage
 \input{funcionalidades/p6-2a_via_codigos_barras.tex}
-\newpage
