@@ -40,6 +40,25 @@
 \selectlanguage{portuguese}
 
 \usepackage{pifont}
+\usepackage{listings}
+\usepackage{color}
+
+\renewcommand\lstlistingname{SQL} % Change language of section name
+
+\lstset{ % General setup for the package
+	language=Perl,
+	basicstyle=\small\sffamily,
+	numbers=left,
+	numberstyle=\tiny,
+	frame=tb,
+	tabsize=4,
+	columns=fixed,
+	showstringspaces=false,
+	showtabs=false,
+	keepspaces,
+	commentstyle=\color{red},
+	keywordstyle=\color{blue}
+}
 
 %para fazer as anotações
 \usepackage[colorinlistoftodos]{todonotes}

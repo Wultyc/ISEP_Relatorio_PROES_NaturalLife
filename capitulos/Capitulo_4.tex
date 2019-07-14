@@ -93,3 +93,27 @@ Os casos de uso na aplicação painel são todos iguais, independentemente do mo
 \input{funcionalidades/p5-desativar.tex}
 \newpage
 \input{funcionalidades/p6-2a_via_codigos_barras.tex}
+\newpage
+\input{funcionalidades/p7-executar_analise.tex}
+\newpage
+
+\section{Script de verificação da integridade de informação}
+Concluído a projeção de cada caso de uso, é necessario planear o ultimo componente do sistema, os scripts responsáveis por emitir alertas quando existem dados não coerentes nas tabelas da base de dados. Segundo a lista de requisitos são três os scripts a serem desenvolvidos: Pontos de Recolha, Registos de Ponto e Produção.
+
+\subsection{Principio de funcionamento}
+Pretende-se que todos os scripts funcionem de um modo igual: uma SQL stored procedure no Microsft SQL Server que é executada todos os dias. Essa stored procedure contem um query especifico que visa identificar as situações que necessitam ser analisadas. Essa query é executada e caso haja retorno é enviado um email com essa informação (figura \ref{fig:stored_procedure})
+
+\begin{figure}[h] 
+	\begin{center}
+		\includegraphics[width=0.30\textwidth,keepaspectratio]{figuras/FluxogramaEmail.png}
+		\caption{Fluxograma das stored procedures}
+		\label{fig:stored_procedure} 
+	\end{center}
+\end{figure}
+
+
+\subsection{Objetivo de execução}
+Cada uma das uma das stored procedures será criada para identificar determinados padrões e reportar-los via email.\\
+A stored procedure Pontos de Recolha serve para identificar Pontos de Recolha cujo o fim de protocolo esta-se a aproximar.
+A stored procedure Registos de Ponto serve para identificar registos de ponto que estão em falta ou duplicados
+A stored procedure Produção serve para identificar as produções cujo o somatório dos peso é superior ao peso da recolha. 
