@@ -88,9 +88,6 @@ O fluxo dentro deste sistema era bastante simples também. Ao executar o ficheir
 
 Após o estudo da aplicação foi iniciado o estudo da base de dados. Este estudo consistiu em compreender as tabelas que constituem base de dados, as suas relações e a informação que nelas é registada. Foi solicitado pela empresa sugestões de melhoria do design da base de dados com foco na coerência da informação registada.
 
-\section{Normalização da base de dados}
-O estudo da base de dados existente e consequente \textit{redesign} levou à entrega de uma proposta da nova estrutura. Esta foi chumbada numa fase inicial porque, como resultado da normalização, foi criada uma tabela destinada a armazenar os cemitérios com os quais a empresa tem parceria, uma segunda tabela onde ficaram registadas as empresas a quem a Natural Life compra o materia-prima e uma terceira tabela responsável por agregar os registos das primeiras duas de modo a estabelecer as relações com a restantes tabelas do sistema. A reposta da administração foi que preferia que existisse apenas uma única tabela, que agregasse os campos das três referidas anteriormente, com um campo extra para distinguir o tipo de registo. Apesar de compreenderem qual era o intuito da mudança sugerida, esta iria tornar mais difícil a adaptação de ficheiros Excel e PowerBi já existentes. A mudança pedida foi efetuada e a administração aceitou as restantes alterações sugeridas. Dentre dela destaca-se a tabela "Entidades" criada para armazenar as informações de identificação (nome, morada, código postal e nif) dos pontos de recolha e clientes. Esta alteração permitiu não só reunir num único local a lista de entidades com as quais a Natural Life interage, eliminado eventuais incoerências de informação a respeito do numero de identificação fiscal, por exemplo.
-
 \section{Modo de implementação do projeto}
 Numa das reuniões discutiu-se o modo como o novo sistema deveria ser implementado. No dia em que ocorresse a primeira implementação do novo sistema, este deveria substituir por completo a aplicação construída no Microsoft Access. Isto porque devido à natureza da informação registada e tendo em conta que a base de dados teria a sua estrutura modificada, não era possível existir um período hibrido onde as duas aplicações coexistiram. Assim ficou definido que enquanto o novo sistema não fosse capaz de registar o ponto dos colaboradores, as recolhas efetuadas, as produções feitas, o produto finalizado e a sua saída, a implementação não iria ocorrer. Devido a este motivo um novo requisito foi criado: A aplicação deveria passar por um rigoroso conjunto de testes, que evolvessem não so a validação da informação registada como da experiencia de utilização de forma a minimizar ao máximo situações de erro que obrigassem a empresa a parar a sua atividade para corrigir a falha. Este testes deveriam ser independentes dos testes feitos no desenvolvimento e seriam feitos pelos elementos da administração e numa fase posterior, por alguns colaboradores de empresa num ambiente de teste.
 
@@ -103,11 +100,14 @@ Após as todas as reuniões de levantamento de requisitos, chegou-se à seguinte
 	\item A aplicação só poderia ser acessível da rede interna
 	\item Aplicação alojada num servidor físico com Ubuntu Server 18.04
 	\item Aplicação WEB desenvolvida em PHP, com o framework Laravel, e em Javascrip.
+	\item A aplicação teria de seguir o modelo MVC\label{sym:MVC}
+	\item A aplicação deve ser construída de forma modular de forma a facilitar a sua manutenção no futuro
 	\item Uso de uma base de dados relacional, construida com o sistema de gestão de base de dados Microsoft SQL Server e a estrutura aprovada pela administração.
 	\item A implementação teria de ser feita em duas fases, uma primeira onde se substituía totalmente a aplicação existente na fabrica, de modo a não parar o trabalho da fábrica ou ter de usar duas aplicações e uma segunda fase durante a qual as novas funcionalidades seriam aplicadas incrementalmente
 	\item Devido à utilização de uma base de dados completamente reestruturada, antes da primeira implementação a aplicação teria de passar por uma fase de testes muito exigente para impedir erros que obrigassem ao uso da base de dados antiga.
 	\item Os teste que irão aprovar a passagem do novo sistema ao estado de produção deverão ser independestes do testes de desenvolvimento e serão feitos, numa primeira fase pela administração. Quando atingirem um nível de maturidade que satisfaz as expectativas da administração a aplicação deverá ser testada, num ambiente de testes, por alguns colaboradores da empresa.
 	\item O sistema tem de ser graficamente coeso
+	\item O novo sistema terá de ter um impacto minimo no modo de utilização dos funcionários.
 	\item Mensagens do sistema após cada ação
 	\item Mensagens com linguagem simples e direta
 	\item Registo do horário de entrada e saída dos colaboradores
