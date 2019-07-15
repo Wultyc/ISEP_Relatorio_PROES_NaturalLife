@@ -1,21 +1,39 @@
 % ************ Chapter 5 ************
-\chapter{Título Capítulo 5} 
+\chapter{Desenvolvimento e implementação} 
 \label{cap:5}
-\emph{Breve introdução ao Capítulo 5.}
 
 
-\section{Primeira secção do Capítulo 5}
+\section{Desenvolvimento da primeira fase do projeto}
+A primeira fase do projeto foi desenvolvida entre as semanas 3 e 6. Este desenvolvimento consistiu criar os modelos (models), desenhar cada um dos ecrãs das aplicação (views) e os controladores (controllers) dos casos de uso Marcar Ponto, Registo de Recolha, Registo de Produção, Registo de Produto Acabado e Registo de Saída de Produto Acabado.\\
+Utilizando os recursos do próprio Laravel, os models foram gerados automaticamente com base na estrutura da base de dados, atraves do recurso de migrations. As migrations são um ficheiros que descrevem a estrutura de uma tabela da base de dados. Servem para poder criar ou alterar tabelas na base de dados sem que o programador tenha de se preocupar com o DBMS\label{sym:DBMG}.\\
+O Laravel inclui o Artisian, uma interface de linha de comandos que disponibiliza uma um conjunto de uteis para a construção da aplicação.\cite{Laravel}.
+Para criar uma migration e o seu respetivo model basta executar no terminal o seguinte comando
 
-....
+\begin{lstlisting}
+$ php artisian make:migration NomeDaMigration -m
+\end{lstlisting}
 
-\subsection{Primeira subsecção do Capítulo 5}
+\noindent
+E serão gerados os ficheiros de migration e model. Após inserir a estrutura que se pretende para as tabelas da base de dados e suas relações nos ficheiros de migrations, usando o comando
 
-....
+\begin{lstlisting}
+$ php artisian migrate
+\end{lstlisting}
 
+\noindent
+As tabelas da base de dados seriam criadas exatamente da forma como foram descritas.\\
+Finalizada a criação dos models, iniciou-se o processo de desenho de cada uma das views. Nesta fase já se sabia que muitos elementos se iriam repetir ao longo da interface, uma consequência direta da coesão da interface. Por esse motivo procurou-se desde cedo isolar alguns elementos de cada um dos ecrãs, como descrito na figura \ref{fig:ui_fabrica_camadas}, para que evitar reescrever código, além de simplificar futuro trabalho de manutenção. Definiu-se então que todas as páginas seriam construídas em cima de uma mesma base. Dependendo da página solicitada era incluída a view a ela referente. No caso dos formulários era ainda incluídos os botões de ação (Guardar, Limpar e Cancelar), com a excepção do formulário de Registo de Ponto. Por fim, os elementos de dropdown de seleção de Colaborador e Ponto de Recolha eram ainda incluídos de outros dois ficheiros independentes. 
+\begin{figure}[htbp] 
+	\begin{center}
+		% Requires \usepackage{graphicx}
+		\includegraphics[width=\textwidth,keepaspectratio]{figuras/camadas_fabrica.png}
+		\caption{Camadas da página da Aplicação Fábrica}
+		\label{fig:ui_fabrica_camadas} 
+	\end{center}
+\end{figure}
 
+\noindent
+Estas inclusões de ficheiros foram produzidas através do recurso Blade fo Laravel. O Blade é um mecanismos de modelagem incluso no Laravel que ao contrario da maioria dos mecanismos de modelagem premite o uso de código PHP na própria view. São ficheiros com a extensão .blade.php e estão, normalmente, dentro do diretório resources/views\cite{Laravel}.
 
-
-
-\section{Conclusão do Capítulo 5}
-
-Breve conclusão do Capítulo 5.
+\subsection{Implementação da primeira fase}
+Conforme os requisitos do projeto, a primeira fase so poderia ser implementada após as funcionalidades da aplicação existente na fabrica (Registo de ponto, de recolhas, de produção, de produto acabado e de saída de produto acabado). Só após estas funcionalidades bem testadas e a coesão do novo sistema se poderia implementar o novo sistema. No final da sexta a administração concordou que o sistema já tinha condições para ser implementado, mas como a semana seguinte coincidia com a ultima semana do mês de maio a administração solicitou que a implementação fosse adiada uma semana visto que não teria tempo de adaptar todas as ferramentas de analises de dados a tempo de fazer a produção dos relatórios mensais. Ficou então decidido que a implementação iria ocorrer na semana 8 e durante a semana 7 iria-se continuar o desenvolvimento do sistema além de continuar os testes à versão a ser implementada.  
