@@ -1,11 +1,3 @@
-% ************ Anexo  ************
-%\renewcommand{\appendixname}{Anexo}
-%\appendix % Usar este comando só no primeiro Anexo
-\chapter{Anexo C: }
-\label{anexo:C}
-Código utilizado na \textit{stored procedure Fim de Protocolo} para notificar a administração da empresa sobre quais Pontos de Recolha cujo o protocolo está prestes terminar.
-
-\begin{verbatim}
 USE [NaturalLife]
 GO
 /****** Object:  StoredProcedure [dbo].[FimProtocolos]    Script Date: 16/07/2019 08:38:38 ******/
@@ -102,5 +94,3 @@ BEGIN
 	END
 
 END
-
-\end{verbatim}

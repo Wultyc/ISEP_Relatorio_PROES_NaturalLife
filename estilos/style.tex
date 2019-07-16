@@ -43,13 +43,13 @@
 \usepackage{listings}
 \usepackage{color}
 
-\renewcommand\lstlistingname{SQL} % Change language of section name
-
+%\renewcommand\lstlistingname{SQL} % Change language of section name
+%
 \lstset{ % General setup for the package
 	language=Bash,
 	basicstyle=\small\sffamily,
-%	numbers=left,
-%	numberstyle=\tiny,
+	numbers=left,
+	numberstyle=\tiny,
 	frame=tb,
 	tabsize=4,
 	columns=fixed,
@@ -58,6 +58,32 @@
 	keepspaces,
 	commentstyle=\color{red},
 	keywordstyle=\color{blue}
+}
+
+\usepackage{listingsutf8}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{sql}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{codepurple},
+	numberstyle=\numberstyle,
+	stringstyle=\color{codepurple},
+	basicstyle=\footnotesize\ttfamily,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	keepspaces=true,
+	numbers=left,
+	numbersep=10pt,
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false
 }
 
 %para fazer as anotações
