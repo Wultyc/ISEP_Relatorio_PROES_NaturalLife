@@ -4,13 +4,13 @@
 Neste capítulo são abordados o planeamento do projeto, \textit{design} da nova base de dados, a estrutura da aplicação e os casos de utilização do sistema.
 
 \section{Planeamento do projeto}
-A primeira semana do período do estágio foram destinadas ao levantamento de requisitos. Foi ainda durante esta semana que ocorreu o redesign da base de dados.
+A primeira semana do período do estágio foram destinadas ao levantamento de requisitos. Foi ainda durante esta semana que ocorreu o \textit{redesign} da base de dados.
 As semanas 2 e 3 foram destinadas ao estudo dos \textit{frameworks} a utilizar, do sistema de gestão de base de dados e do ambiente da empresa.
 Conforme indicado nos requisitos do projeto, o desenvolvimento do sistema de informação teria de ser dividido em duas fases. A data para a conclusão da primeira fase foi fixada no inicio da sexta semana, dando-se logo incio à fase dois.
 
 \section{Design da nova base de dados}
-A base de dados a ser utilizada neste projeto teve como ponto de partida aquela que já era utilizada pela aplicação antiga. De modo a tornar a estrutura o mais adequada possível, numa da reuniões, foi solicitado à administração que descrevesse em detalhe o fluxo de informação da estrutura até à data implementada. Após a reunião seguiu-se um estudo para encontrar formas de otimizar a estrutura da base de dados, não apenas na questão da normalização da estrutura mas também de forma a tornar o trabalho futuro mais simples procurando meios de otimizar o fluxo da informação. Após o estudo foi entregue de uma proposta da nova estrutura. Esta foi chumbada numa fase inicial porque, como resultado da normalização, foi criada uma tabela destinada a armazenar os cemitérios com os quais a empresa tem parceria, uma segunda tabela onde ficaram registadas as empresas a quem a Natural Life compra o materia-prima e uma terceira tabela responsável por agregar os registos das primeiras duas de modo a estabelecer as relações com a restantes tabelas do sistema. A reposta da administração foi que preferia que existisse apenas uma única tabela, que agregasse os campos das três referidas anteriormente, com um campo extra para distinguir o tipo de registo. Apesar de compreenderem qual era o intuito da mudança sugerida, esta iria tornar mais difícil a adaptação de ficheiros Excel e PowerBi já existentes. A mudança pedida foi efetuada e a administração aceitou as restantes alterações sugeridas. Dentre dela destaca-se a tabela "Entidades" criada para armazenar as informações de identificação (nome, morada, código postal e nif) dos pontos de recolha e clientes. Esta alteração permitiu não só reunir num único local a lista de entidades com as quais a Natural Life interage, eliminado eventuais incoerências de informação a respeito do numero de identificação fiscal, por exemplo.
-O processo de reforma da base de dados manteve-se então congelado até à sétima semana, na qual se criou a tabela "completar\_recolha", conforme descrito no capítulo anterior. No final de todo este processo a estrutura final da base de dados, aprovada pela administração, é a descrita na figura \ref{fig:db_model}.
+A base de dados a ser utilizada neste projeto teve como ponto de partida aquela que já era utilizada pela aplicação antiga. De modo a tornar a estrutura o mais adequada possível, numa da reuniões, foi solicitado à administração que descrevesse em detalhe o fluxo de informação da estrutura até à data implementada. Após a reunião seguiu-se um estudo para encontrar formas de otimizar a estrutura da base de dados, não apenas na questão da normalização da estrutura mas também de forma a tornar o trabalho futuro mais simples procurando meios de otimizar o fluxo da informação. Após o estudo foi entregue de uma proposta da nova estrutura. Esta não foi aceite numa fase inicial porque, como resultado da normalização, foi criada uma tabela destinada a armazenar os cemitérios com os quais a empresa tem parceria, uma segunda tabela onde ficaram registadas as empresas a quem a Natural Life compra o materia-prima e uma terceira tabela responsável por agregar os registos das primeiras duas de modo a estabelecer as relações com a restantes tabelas do sistema. A reposta da administração foi a de que preferia que existisse apenas uma única tabela, que agregasse os campos das três referidas anteriormente, com um campo extra para distinguir o tipo de registo. Apesar de compreenderem qual era o objetivo da mudança sugerida, esta iria tornar mais difícil a adaptação de ficheiros Excel e PowerBi já existentes. A mudança pedida foi efetuada e a administração aceitou as restantes alterações sugeridas. Dentre dela destaca-se a tabela \textit{Entidades} criada para armazenar as informações de identificação (\textit{Nome}, \textit{Morada}, \textit{Código Postal} e \textit{Número de Indentificação Fiscal} (NIF\label{sym:NIF})) dos pontos de recolha e clientes. Esta alteração permitiu não só reunir num único local a lista de entidades com as quais a Natural Life interage, eliminado eventuais incoerências de informação a respeito do NIF, por exemplo.
+O processo de reforma da base de dados manteve-se então congelado até à sétima semana, na qual se criou a tabela \textit{completar\ recolha}, conforme descrito no capítulo anterior. No final de todo este processo a estrutura final da base de dados, aprovada pela administração, é a descrita na figura \ref{fig:db_model}.
 
 \begin{figure}[htbp] 
 	\begin{center}
@@ -21,12 +21,10 @@ O processo de reforma da base de dados manteve-se então congelado até à séti
 	\end{center}
 \end{figure}
 
-Finalizado este processo, iniciou-se o processo de design da aplicação.
+Finalizado este processo, iniciou-se o processo de \textit{design} da aplicação.
 
 \section{Aplicação}
-Respondendo aos requisitos definidos no Capitulo \ref{cap:3}, a aplicação a ser desenvolvida seria uma aplicação web construída em PHP, com o framwork laravel, e JavaScript segundo o padrão do modelo MVC. O modelo MVC, representado na figura \ref{fig:mvc}, descreve a forma como uma aplicação deve ser construída separando-a em três camadas distintas: Model View e Controller. Esta separação server distinguir representações de informação internas dos modos como a informação é apresentada ao utilizador\cite{Wikipediad}.
-Esta abstração em camadas é particularmente vantajosa no que toca a fazer reutilização de código, pois tendo em conta as regras do modelo cada classe tem apenas uma responsabilidade atribuída além de o projeto ter um baixo acoplamento entre si. Desta forma é muito fácil utilizar a mesma classe partes distas do projeto, facilitando a sua compreensão, manutenção e atualização.
-Estas características do modelo servem ainda de resposta a outros requisitos do projeto como modularidade do projeto.
+Respondendo aos requisitos definidos no Capitulo \ref{cap:3}, a aplicação a ser desenvolvida seria uma aplicação \textit{web} construída em PHP, com o \textit{framwork} Laravel, e JavaScript segundo o padrão do modelo MVC. O modelo MVC, representado na figura \ref{fig:mvc}, descreve a forma como uma aplicação deve ser construída separando-a em três camadas distintas: \textit{Model} \textit{View} e \textit{Controller}.
 \begin{figure}[H] 
 	\begin{center}
 		% Requires \usepackage{graphicx}
@@ -36,17 +34,20 @@ Estas características do modelo servem ainda de resposta a outros requisitos do
 	\end{center}
 \end{figure}
 
-\noindent 
-Ainda respondendo aos requisitos deveria existir duas áreas distintas dentro da aplicação destinada aos colaboradores na fábrica e à administração.
+\noindent
+Esta separação serve distinguir representações de informação internas dos modos como a informação é apresentada ao utilizador \cite{Wikipediad}.
+A abstração em camadas que o modelo oferece é particularmente vantajosa no que toca a fazer reutilização de código, pois cada classe tem apenas uma responsabilidade atribuída. Além de promover o baixo acoplamento do projeto, desta forma é muito fácil utilizar a mesma classe em partes distintas do projeto, facilitando a sua compreensão, manutenção e atualização.
+Estas características do modelo servem ainda de resposta a outros requisitos do projeto como modularidade do projeto.
+Ainda respondendo aos requisitos, deveria existir duas áreas distintas dentro da aplicação destinada aos colaboradores na fábrica e à administração.
 Estas suas sub-aplicações foram designadas de Aplicação Fábrica, acessível aos colaboradores da empresa e responsável pelos registos de informação na base de dados, e a Aplicação Painel, protegida por um sistema de autenticação na qual seria possível manipular toda a informação registada.
-Para fazer esta separação, os endereços dentro da aplicação foram divididos em dois grupos distintos. Em primeiro lugar as páginas associadas à Aplicação de Fábrica estavam sob o endereço /Fabrica:
+Para fazer esta separação, os endereços dentro da aplicação foram divididos em dois grupos. Em primeiro lugar as páginas associadas à Aplicação de Fábrica estavam sob o endereço /Fabrica, i.e
 
 \begin{center}
 \url{http://<ip.do.servidor>/Fabrica/<Nome_da_página_solicitada>}
 \end{center}
 
 \noindent 
-Enquanto as páginas relacionadas com a Aplicação Painel estavam sob o endereço /Painel:
+enquanto as páginas relacionadas com a Aplicação Painel estavam sob o endereço /Painel, i.e.
 
 \begin{center}
 	\url{http://<ip.do.servidor>/Painel/<Nome_da_página_solicitada>}
@@ -54,9 +55,9 @@ Enquanto as páginas relacionadas com a Aplicação Painel estavam sob o endere�
 
 \noindent 
 A única exceção a esta regra está no diretório raiz do sistema, que direciona para a página index da Aplicação de Fábrica.\\
-Esta organização em nada muda a estrutura de ficheiros do projeto. O framework laravel, trás consigo um recurso de rotas, que permite facilmente que este tipo de regras seja incluída no projeto sem ter necessariamente que fazer modificações à árvore de diretórios da aplicação. Desta forma, manteve-se uma estrutura dos ficheiros da aplicação coesa, mantendo cada tipo de ficheiro na sua pasta definida e manter regras de padronização dos endereços da aplicação.
+Esta organização em nada muda a estrutura de ficheiros do projeto. O \textit{framework} Laravel, trás consigo um recurso de rotas, que permite facilmente que este tipo de regras seja incluída no projeto sem ter necessariamente que fazer modificações à árvore de diretórios da aplicação. Desta forma, manteve-se uma estrutura dos ficheiros da aplicação coesa, mantendo cada tipo de ficheiro na sua pasta definida e manter regras de padronização dos endereços da aplicação.
 
-\section{Casos de uso do sistema}
+\section{Casos de utilização do sistema}
 Definidos todos os detalhes supracitados, é possível dar inicio à definição de cada um dos casos de uso do projeto. Esta definição serve como guia de desenvolvimento, mantendo as informações necessárias para se conhecer o comportamento esperado de cada um dos casos de uso do sistema final e é explicada nas próximas páginas.
 \newpage
 
@@ -80,7 +81,7 @@ Definidos todos os detalhes supracitados, é possível dar inicio à definição
 
 % Aplicação Painel
 \subsection{Aplicação Painel - Nota introdutória}
-Os casos de uso na aplicação painel são todos iguais, independentemente do model. Desde que o caso de uso se enquadre num determinado model, os esquemas apresentados são válidos para esse model. Por esse motivo optou-se por apresentar apenas um tópico para cada caso de uso e nele é indicado os models que são compatíveis.
+Os casos de utilização da Aplicação Painel têm comportamento semelhante ao descrito, independentemente do \textit{model} ao qual está associado, pelo que nos abstemos de os apresentar individualmente.
 
 \input{funcionalidades/p1-listagem.tex}
 \newpage
@@ -97,23 +98,23 @@ Os casos de uso na aplicação painel são todos iguais, independentemente do mo
 \input{funcionalidades/p7-executar_analise.tex}
 \newpage
 
-\section{Script de verificação da integridade de informação}
-Concluído a projeção de cada caso de uso, é necessario planear o ultimo componente do sistema, os scripts responsáveis por emitir alertas quando existem dados não coerentes nas tabelas da base de dados. Segundo a lista de requisitos são três os scripts a serem desenvolvidos: Pontos de Recolha, Registos de Ponto e Produção.
+\section{\textit{Script} de verificação da integridade de informação}
+Concluído a projeção de cada caso de utilização, é necessário planear o último componente do sistema, os \textit{scripts} responsáveis por emitir alertas quando existem dados não coerentes nas tabelas da base de dados. Segundo a lista de requisitos são três os \textit{scripts} a serem desenvolvidos: \textit{Fim de Protocolo}, \textit{Erros no Registo de Ponto} e \textit{Erros de Produção}.
 
 \subsection{Principio de funcionamento}
-Pretende-se que todos os scripts funcionem de um modo igual: uma SQL stored procedure no Microsft SQL Server que é executada todos os dias. Essa stored procedure contem um query especifico que visa identificar as situações que necessitam ser analisadas. Essa query é executada e caso haja retorno é enviado um email com essa informação (figura \ref{fig:stored_procedure})
+Pretende-se que todos os \textit{scripts} funcionem de um modo igual: uma SQL \textit{stored procedure} no Microsft SQL Server que é executada todos os dias. Essa \textit{stored procedure} contem um \textit{query} especifico que visa identificar as situações que necessitam ser analisadas. Essa \textit{query} é executada e caso haja retorno é enviado um \textit{email} com essa informação (figura \ref{fig:stored_procedure})
 
 \begin{figure}[h] 
 	\begin{center}
 		\includegraphics[width=0.30\textwidth,keepaspectratio]{figuras/FluxogramaEmail.png}
-		\caption{Fluxograma das stored procedures}
+		\caption{Fluxograma das \textit{stored procedures}}
 		\label{fig:stored_procedure} 
 	\end{center}
 \end{figure}
 
 
 \subsection{Objetivo de execução}
-Cada uma das uma das stored procedures será criada para identificar determinados padrões e reportar-los via email.
-A stored procedure Pontos de Recolha serve para identificar Pontos de Recolha cujo o fim de protocolo esta-se a aproximar.
-A stored procedure Registos de Ponto serve para identificar registos de ponto que estão em falta ou duplicados
-A stored procedure Produção serve para identificar as produções cujo o somatório dos peso é superior ao peso da recolha. 
+Cada uma das uma das \textit{stored procedures} será criada para identificar determinados padrões e reportar-los via \textit{email}.
+A \textit{stored procedure Fim de Protocolo} serve para identificar Pontos de Recolha cujo o fim de protocolo esta-se a aproximar. O código desta \textit{stored procedure} está disponível no anexo \ref{anexo:C}.
+A \textit{stored procedure Erros no Registo de Ponto} serve para identificar registos de ponto que estão em falta ou duplicados. O código desta \textit{stored procedure} está disponível no anexo \ref{anexo:D}.
+A \textit{stored procedure Erros de Produção} serve para identificar as produções cujo o somatório dos peso é superior ao peso da recolha. O código desta \textit{stored procedure} está disponível no anexo \ref{anexo:E}.
