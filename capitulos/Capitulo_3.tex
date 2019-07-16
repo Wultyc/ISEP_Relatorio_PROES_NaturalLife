@@ -18,7 +18,7 @@ Requisitos absolutos:
 	\item Registo da saída de produto acabado e cliente a quem foi vendido;
 	\item Impressão de uma segunda via dos códigos de barras já impressos referente a uma recolha ou um produto acabado;
 	\item Incremento do peso de uma recolha efetuada anteriormente;
-	\item Zona protegida por ID (IDentifier) e \textit{Password} para a consulta dos registos feitos;
+	\item Zona protegida por IDentifier (ID\label{sym:ID})e \textit{Password} para a consulta dos registos feitos;
 	\item Possibilidade de editar e apagar registos já feitos;
 	\item \textit{Script} de analise da coerência dos dados registados.
 \end{itemize}
@@ -85,7 +85,7 @@ O fluxo dentro deste sistema era bastante simples. Ao executar o ficheiro Micros
 	\label{fig:app_access_cb}
 \end{figure}
 \noindent
-Estes códigos de barras deveriam ter estruturas diferentes. O código de barras referente à recolha (figura \ref{fig:app_access_cb} a) deveria ser constituído pelo código de barras correspondente ao ID da recolha, o ID do ponto de recolha e a data da recolha. Já no caso produto acabado era apenas apresentado o código de barras referente ao ID do mesmo (figura \ref{fig:app_access_cb} b). A pedido da administração deveria passar a ser apresentado também o ID do produto acabado em formato numérico.\\
+Estes códigos de barras deveriam ter estruturas diferentes. O código de barras referente à recolha (figura \ref{fig:app_access_cb} (a) deveria ser constituído pelo código de barras correspondente ao ID da recolha, o ID do ponto de recolha e a data da recolha. Já no caso produto acabado era apenas apresentado o código de barras referente ao ID do mesmo (figura \ref{fig:app_access_cb} (b). A pedido da administração deveria passar a ser apresentado também o ID do produto acabado em formato numérico.\\
 Após o estudo da aplicação foi iniciado o estudo da base de dados. Este estudo consistiu em compreender as tabelas que constituem base de dados, as suas relações e a informação que nelas era registada. Foi também solicitado pela empresa sugestões de melhoria do \textit{design} da base de dados com foco na coerência da informação registada.
 
 \section{Modo de implementação do projeto}

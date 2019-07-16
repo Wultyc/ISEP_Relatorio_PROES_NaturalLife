@@ -5,7 +5,7 @@ Neste capítulo são apresentadas as fases de desenvolvimento e a validação do
 
 \section{Desenvolvimento do projeto}
 A primeira fase do projeto foi desenvolvida entre as semanas 4 e 6. Este desenvolvimento consistiu criar os modelos (\textit{models}), desenhar cada um dos ecrãs das aplicação (\textit{views}) e os controladores (\textit{controllers}) dos casos de uso Marcar Ponto, Registo de Recolha, Registo de Produção, Registo de Produto Acabado e Registo de Saída de Produto Acabado.\\
-Utilizando os recursos do \textit{framework} Laravel, os \textit{models} foram gerados automaticamente com base na estrutura da base de dados, através do recurso de \textit{migrations}. As \textit{migrations} são um ficheiros que descrevem a estrutura de uma tabela da base de dados. Estes servem para poder criar ou alterar tabelas na base de dados sem que o programador tenha de se preocupar com o DBMS\label{sym:DBMG}.\\
+Utilizando os recursos do \textit{framework} Laravel, os \textit{models} foram gerados automaticamente com base na estrutura da base de dados, através do recurso de \textit{migrations}. As \textit{migrations} são um ficheiros que descrevem a estrutura de uma tabela da base de dados. Estes servem para poder criar ou alterar tabelas na base de dados sem que o programador tenha de se preocupar com o DBMS.\\
 O Laravel inclui o Artisian, uma interface de linha de comandos que disponibiliza uma um conjunto de uteis para a construção da aplicação\cite{Laravelb}.
 Para criar uma \textit{migration} e o seu respetivo \textit{model} basta executar no terminal o seguinte comando
 
@@ -66,12 +66,12 @@ Na figura \ref{fig:comparacao_menu} são apresentadas as diferenças entre o men
 \begin{figure}[H]
 	\centering
 	
-	\begin{subfigure}[t]{0.45\linewidth}
+	\begin{subfigure}[t]{0.35\linewidth}
 		\includegraphics[width=\linewidth]{figuras/AppAccess/0-MenuInicial.jpg}
 		\label{fig:comparacao_menu_1}
 		\caption{Menu na aplicação anterior}
 	\end{subfigure}
-	\begin{subfigure}[t]{0.45\linewidth}
+	\begin{subfigure}[t]{0.55\linewidth}
 		\includegraphics[width=\linewidth]{figuras/AppPhp/0-menu_2_fase.png}
 		\label{fig:comparacao_menu_2}
 		\caption{Menu na nova aplicação}
@@ -85,12 +85,12 @@ Na figura \ref{fig:comparacao_ponto} são apresentadas as diferenças entre a \t
 \begin{figure}[H]
 	\centering
 	
-	\begin{subfigure}[t]{0.45\linewidth}
+	\begin{subfigure}[t]{0.3\linewidth}
 		\includegraphics[width=\linewidth]{figuras/AppAccess/1-Ponto.jpg}
 		\label{fig:comparacao_ponto_1}
 		\caption{\textit{View} de registo de ponto na aplicação anterior}
 	\end{subfigure}
-	\begin{subfigure}[t]{0.45\linewidth}
+	\begin{subfigure}[t]{0.60\linewidth}
 		\includegraphics[width=\linewidth]{figuras/AppPhp/1_ponto.png}
 		\label{fig:comparacao_ponto_2}
 		\caption{\textit{View} de registo de ponto na nova aplicação}
@@ -104,12 +104,12 @@ Na figura \ref{fig:comparacao_recolha} são apresentadas as diferenças entre a 
 \begin{figure}[H]
 	\centering
 	
-	\begin{subfigure}[t]{0.45\linewidth}
+	\begin{subfigure}[t]{0.35\linewidth}
 		\includegraphics[width=\linewidth]{figuras/AppAccess/2-Recolha.jpg}
 		\label{fig:comparacao_recolha_1}
 		\caption{\textit{View} de registo de recolha na aplicação anterior}
 	\end{subfigure}
-	\begin{subfigure}[t]{0.45\linewidth}
+	\begin{subfigure}[t]{0.55\linewidth}
 		\includegraphics[width=\linewidth]{figuras/AppPhp/2_recolha.png}
 		\label{fig:comparacao_recolha_2}
 		\caption{\textit{View} de registo de recolha na nova aplicação}
@@ -119,17 +119,16 @@ Na figura \ref{fig:comparacao_recolha} são apresentadas as diferenças entre a 
 	\label{fig:comparacao_recolha}
 \end{figure}
 
-\newpage
 Ainda relativamente ao registo de recolha, na figura \ref{fig:comparacao_recolhacb} são apresentadas as diferenças entre o código de barras gerado pela aplicação anterior e pelo novo sistema.
 \begin{figure}[H]
 	\centering
 	
-	\begin{subfigure}[t]{0.45\linewidth}
+	\begin{subfigure}[t]{0.43\linewidth}
 		\includegraphics[width=\linewidth]{figuras/AppAccess/2-CodBarras.jpg}
 		\label{fig:comparacao_recolhacb_1}
 		\caption{código de barras gerado pela aplicação anterior}
 	\end{subfigure}
-	\begin{subfigure}[t]{0.45\linewidth}
+	\begin{subfigure}[t]{0.48\linewidth}
 		\includegraphics[width=\linewidth]{figuras/AppPhp/2-CodBarras.png}
 		\label{fig:comparacao_recolhacb_2}
 		\caption{código de barras gerado pela nova aplicação}
@@ -158,17 +157,16 @@ Na figura \ref{fig:comparacao_producao} são apresentadas as diferenças entre a
 	\label{fig:comparacao_producao}
 \end{figure}
 
-\newpage
 Na figura \ref{fig:comparacao_prodacabado} são apresentadas as diferenças entre a \textit{view} de registo de produto acabado da aplicação anterior e o do novo sistema.
 \begin{figure}[H]
 	\centering
 	
-	\begin{subfigure}[t]{0.45\linewidth}
+	\begin{subfigure}[t]{0.35\linewidth}
 		\includegraphics[width=\linewidth]{figuras/AppAccess/4-ProdutoAcabado.jpg}
 		\label{fig:comparacao_prodacabado_1}
 		\caption{\textit{View} de registo de produto acabado na aplicação anterior}
 	\end{subfigure}
-	\begin{subfigure}[t]{0.45\linewidth}
+	\begin{subfigure}[t]{0.55\linewidth}
 		\includegraphics[width=\linewidth]{figuras/AppPhp/4_produto_acabado.png}
 		\label{fig:comparacao_prodacabado_2}
 		\caption{\textit{View} de registo de produto acabado na nova aplicação}
@@ -201,12 +199,12 @@ Na figura \ref{fig:comparacao_prodacabado_saida} são apresentadas as diferença
 \begin{figure}[H]
 	\centering
 	
-	\begin{subfigure}[t]{0.45\linewidth}
+	\begin{subfigure}[t]{0.40\linewidth}
 		\includegraphics[width=\linewidth]{figuras/AppAccess/5-SaidaProdutoAcabado.jpg}
 		\label{fig:comparacao_prodacabado_saida_1}
 		\caption{\textit{View} de registo de produto acabado na aplicação anterior}
 	\end{subfigure}
-	\begin{subfigure}[t]{0.45\linewidth}
+	\begin{subfigure}[t]{0.50\linewidth}
 		\includegraphics[width=\linewidth]{figuras/AppPhp/5_saida_produto_acabado_2_fase.png}
 		\label{fig:comparacao_prodacabado_saida_2}
 		\caption{\textit{View} de registo saída de produto acabado na nova aplicação}
@@ -235,22 +233,23 @@ Na figura \ref{fig:comparacao_novasfunc} são apresentadas as funcionalidades se
 	\label{fig:comparacao_novasfunc}
 \end{figure}
 
-\newpage
-Outro elemento que não existia na aplicação anterior era o Painel. Na figura \ref{fig:comparacao_painel} são apresentadas as funcionalidades listagem, inserção e edição.
+Outro elemento que não existia na aplicação anterior era o Painel. Nas figura \ref{fig:comparacao_paine_l} e \ref{fig:comparacao_painel} são apresentadas as funcionalidades listagem, inserção e edição.
 \begin{figure}[H]
 	\centering
 	
-	\begin{subfigure}[t]{0.30\linewidth}
-		\includegraphics[width=\linewidth]{figuras/AppPhp/8-lista.png}
-		\label{fig:comparacao_painel_1}
-		\caption{Exemplo de \textit{View} listagem}
-	\end{subfigure}
-	\begin{subfigure}[t]{0.30\linewidth}
+	\includegraphics[width=0.7\linewidth]{figuras/AppPhp/8-lista.png}
+	\label{fig:comparacao_painel_l}
+	\caption{Exemplo de \textit{View} listagem}
+
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[t]{0.45\linewidth}
 		\includegraphics[width=\linewidth]{figuras/AppPhp/9-novo.png}
 		\label{fig:comparacao_painel_1}
 		\caption{Exemplo de \textit{View} inserção}
 	\end{subfigure}
-	\begin{subfigure}[t]{0.30\linewidth}
+	\begin{subfigure}[t]{0.45\linewidth}
 		\includegraphics[width=\linewidth]{figuras/AppPhp/10-editar.png}
 		\label{fig:comparacao_painel_2}
 		\caption{Exemplo de \textit{View} edição}
@@ -263,11 +262,11 @@ Outro elemento que não existia na aplicação anterior era o Painel. Na figura 
 \section{Validação do trabalho}
 Logo desde a primeira fase de implementação notou-se uma grande satisfação por parte da administração da Natural Life. Este sentimento foi-se mantendo até ao final do estágio, momento no qual a empresa confirmou que a aplicação iria continuar a ser utilizada na empresa. Consultado o supervisor sobre a poupança de tempo semanal com a implementação deste sistema este referiu uma redução de 20\% a 30\% do tempo de trabalho semanal a efetura confirmação e retificação de registos.\\
 Da perspetiva dos colaboradores, o \textit{feedback} também foi muito positivo. O maior receio da administração seria que estes não se adaptassem ao novo sistema e houvesse a necessidade de retornar ao anterior. Mas a verdade é que a reação foi bem melhor do que era espectado. A reação por parte dos colaboradores foi de enorme agrado, havendo inclusivamente lugar a sugestões de melhoria feitas à administração.
-
+\newpage
 \section{Execução do projeto} 
 Como forma de avaliar o desenvolvimento do projeto, foi construído um gráfico da figura \ref{fig:burndown_chart}, denominado \textit{burndown char}, que demonstra a relação entre os objetivos a cumprir com o período do projeto.
 
-\begin{figure}[htbp] 
+\begin{figure}[H] 
 	\begin{center}
 		% Requires \usepackage{graphicx}
 		\includegraphics[width=0.90\textwidth,keepaspectratio]{figuras/burndown_chart.png}
@@ -275,11 +274,12 @@ Como forma de avaliar o desenvolvimento do projeto, foi construído um gráfico 
 		\label{fig:burndown_chart} 
 	\end{center}
 \end{figure}
+
 \noindent
 A linha de cor azul refere-se ao que era espectável que acontecesse, um desenvolvimento constante no qual o projeto é entregue no último dia do período, com todos os objetivos concluídos. A laranja é possível observar a evolução real do trabalho. Desta linha é relevante analisar que durante as primeiras três semana a evolução do projeto ficou à quem do esperado, mas após a terceira semana a linha de execução superou a previsão culminando com a conclusão do projeto uma semana antes do previsto. A razão para a diferença entre as duas linhas prende-se com o facto de que nas primeiras três semanas terem sido semanas de estudo e adaptação. Concluído esse processo já tinham sido construídos as ferramentas necessárias para a execução do projeto.
 
 \section{\textit{Software}s e serviços usados}
-O projeto possuía um conjunto tão alagado de requisitos que para proceder à sua elaboração foi necessário utilizar um grande conjunto de \textit{software}s e serviços. Desta lista fazem partes, sistemas operativos, editores de código, servidores, DBMSs
+O projeto possuía um conjunto tão alagado de requisitos que para proceder à sua elaboração foi necessário utilizar um grande conjunto de \textit{software}s e serviços. Desta lista fazem partes, sistemas operativos, editores de código, servidores, DBMSs, linguagens de programação e restantes utilitários.
 
 \begin{multicols}{3}
 	\begin{itemize}

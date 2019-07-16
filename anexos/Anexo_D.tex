@@ -1,14 +1,15 @@
 % ************ Anexo  ************
 %\renewcommand{\appendixname}{Anexo}
 %\appendix % Usar este comando só no primeiro Anexo
-\chapter{Anexo D: }
+\chapter{\textit{Stored procedure} erros de produção}
 \label{anexo:D}
 Código utilizado na \textit{stored procedure Erros de Produção} para notificar a administração da empresa sobre quais os registos de produção têm um peso superior ao peso da recolha associada.
 
 \begin{verbatim}
 USE [NaturalLife]
 GO
-/****** Object:  StoredProcedure [dbo].[ErrosProducao]    Script Date: 16/07/2019 08:47:51 ******/
+/****** Object:  StoredProcedure [dbo].[ErrosProducao]    
+Script Date: 16/07/2019 08:47:51 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -58,7 +59,8 @@ SUM(producao.peso_cera + producao.peso_chapa + producao.peso_plastico) AS td
 FROM producao
 INNER JOIN recolhas
 ON	recolhas.id = producao.recolhas_id
-WHERE (producao.peso_cera + producao.peso_chapa + producao.peso_plastico) > recolhas.peso
+WHERE (producao.peso_cera + producao.peso_chapa +
+ producao.peso_plastico) > recolhas.peso
 AND producao.created_at > GETDATE()-1
 GROUP BY recolhas.id, recolhas.data_recolha, recolhas.peso
 ORDER BY recolhas.id DESC
@@ -86,8 +88,10 @@ tr {
 width: 25%;
 background-color: #F1F1F1;
 }
-</style><title>Registo de Produção maior que Registo de Recolha</title></head><body>'
---SET @HTMLBody = @HTMLBody + 'Os seguintes registos de produção superaram o peso da recolha associada<br/>'
+</style><title>Registo de Produção maior que Registo de Recolha</title>
+</head><body>'
+--SET @HTMLBody = @HTMLBody + 'Os seguintes registos de produção
+ superaram o peso da recolha associada<br/>'
 SET @HTMLBody = @HTMLBody + @tableBody + '</body></html>'
 
 --envia o email

@@ -1,14 +1,15 @@
 % ************ Anexo  ************
 %\renewcommand{\appendixname}{Anexo}
 %\appendix % Usar este comando só no primeiro Anexo
-\chapter{Anexo E: }
+\chapter{\textit{Stored procedure} erros no negisto de ponto}
 \label{anexo:E}
 Código utilizado na \textit{stored procedure Erros no Registo de Ponto} para notificar a administração da empresa sobre quais os registos de ponto não são coerentes.
 
 \begin{verbatim}
 USE [NaturalLife]
 GO
-/****** Object:  StoredProcedure [dbo].[ErroPonto]    Script Date: 16/07/2019 08:48:45 ******/
+/****** Object:  StoredProcedure [dbo].[ErroPonto]    
+Script Date: 16/07/2019 08:48:45 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -33,8 +34,9 @@ cast(ponto.dataHora as date) AS DATA
 FROM ponto
 INNER JOIN colaboradores
 ON ponto.colaboradores_id = colaboradores.id
-WHERE cast(ponto.dataHora as date) = cast(GETDATE()-1 as date)
-GROUP BY colaboradores.id, colaboradores.nome, cast(ponto.dataHora as date)
+WHERE cast(ponto.dataHora as date)= cast(GETDATE()-1 as date)
+GROUP BY colaboradores.id, colaboradores.nome, 
+cast(ponto.dataHora as date)
 HAVING COUNT(*) % 2 <> 0
 
 union
@@ -70,7 +72,8 @@ INNER JOIN colaboradores
 ON ponto.colaboradores_id = colaboradores.id
 WHERE cast(ponto.dataHora as date) = cast(GETDATE()-1 as date)
 GROUP BY colaboradores.id, colaboradores.nome, cast(ponto.dataHora as date)
-HAVING sum(case when entrada = 1 then 1 else 0 end) <> sum(case when entrada = 0 then 1 else 0 end)
+HAVING sum(case when entrada = 1 then 1 else 0 end) <> 
+sum(case when entrada = 0 then 1 else 0 end)
 
 IF EXISTS(
 SELECT * FROM @SQL
@@ -97,7 +100,10 @@ SELECT
 id as td,
 nome as td,
 data as td,
-cast('<a href = "http://192.168.1.67/Painel/Colaboradores/Ponto/Erro?SearchOnURL=' + cast(id as nvarchar) + '_' + cast(cast(data as date) as nvarchar) + '"  target="_blank"> Ver no Painel </a>' as XML) as td
+cast('<a href =
+ "http://192.168.1.67/Painel/Colaboradores/Ponto/Erro?SearchOnURL=' + 
+ cast(id as nvarchar) + '_' +  cast(cast(data as date) as nvarchar) +
+  '"  target="_blank"> Ver no Painel </a>' as XML) as td
 
 FROM @SQL
 --Fim da Query
@@ -124,8 +130,10 @@ tr {
 width: 25%;
 background-color: #F1F1F1;
 }
-</style><title>Registo de Produção maior que Registo de Recolha</title></head><body>'
---SET @HTMLBody = @HTMLBody + 'Aproxima-se a data do fim de protocolo com os seguintes Pontos de Recolha<br/>'
+</style><title>Registo de Produção maior que Registo de Recolha</title>
+</head><body>'
+--SET @HTMLBody = @HTMLBody + 'Aproxima-se a data do fim de protocolo
+ com os seguintes Pontos de Recolha<br/>'
 SET @HTMLBody = @HTMLBody + @tableBody + '</body></html>'
 
 --envia o email
