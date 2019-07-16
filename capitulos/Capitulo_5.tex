@@ -33,7 +33,8 @@ Finalizada a criação dos \textit{models}, iniciou-se o processo de desenho de 
 \end{figure}
 
 \noindent
-Estas inclusões de ficheiros foram produzidas através do recurso Blade do Laravel. O Blade é um mecanismos de modelagem incluso no Laravel que ao contrario da maioria dos mecanismos de modelagem permite o uso de código PHP na própria \textit{view}. São ficheiros com a extensão \textit{.blade.php} e estão, normalmente, dentro do diretório \textit{resources/views}\cite{Laravela}.Para utilizar este recurso do \textit{framework} Laravel é necessário usar um template que tenha sido compatibilizado com este. O template utilizado foi o AdminLTE\cite{AlmsaeedStudio} implementado para o Blade pelo projeto Laravel-AdminLTE\cite{Noten}.
+Estas inclusões de ficheiros foram produzidas através do recurso Blade do Laravel. O Blade é um mecanismos de modelagem incluso no Laravel que ao contrario da maioria dos mecanismos de modelagem permite o uso de código PHP na própria \textit{view}. São ficheiros com a extensão \textit{.blade.php} e estão, normalmente, dentro do diretório \textit{resources/views}\cite{Laravela}.Para utilizar este recurso do \textit{framework} Laravel é necessário usar um template que tenha sido compatibilizado com este. O template utilizado foi o AdminLTE\cite{AlmsaeedStudio} implementado para o Blade pelo projeto Laravel-AdminLTE\cite{Noten}. 
+Faltava ainda definir o modo como os códigos de barras iram ser gerados. Consultando os repositórios \textit{online} chegou-se a solução de usar o projeto Laravel 5 \textit{Barcode Generator}\cite{Milon}.
 
 \subsection{Implementação da primeira fase}
 Conforme os requisitos do projeto, a primeira fase so poderia ser implementada após as funcionalidades da aplicação existente na fabrica (Registo de ponto, de recolhas, de produção, de produto acabado e de saída de produto acabado). Só após estas funcionalidades bem testadas e a coesão do novo sistema se poderia implementar o novo sistema. No final da sexta a administração concordou que o sistema já tinha condições para ser implementado, mas como a semana seguinte coincidia com a ultima semana do mês de maio a administração solicitou que a implementação fosse adiada uma semana visto que não teria tempo de adaptar todas as ferramentas de analises de dados a tempo de fazer a produção dos relatórios mensais. Ficou então decidido que a implementação iria ocorrer na semana 8 e durante a semana 7 iria continuar o desenvolvimento do sistema além de continuar os testes à versão a ser implementada. De forma a manter a versão estável nessa condição criou-se no repositório uma segunda \textit{branch} denominada \textit{release}.
@@ -284,17 +285,18 @@ O projeto possuía um conjunto tão alagado de requisitos que para proceder à s
 \begin{multicols}{3}
 	\begin{itemize}
 		\item Microsoft Windows 10
-		\item Ubuntu 18.04
+		\item Ubuntu 18.04\cite{Canonical}
 		
-		\item Apache
-		\item Microsoft SQL Server
+		\item Apache\cite{Apache}
+		\item Microsoft SQL Server\cite{Microsoftb}
 		
-		\item Microsoft Database Management Studio
-		\item Microsoft Visual Studio
+		\item Microsoft Database Management Studio\cite{Microsoftc}
+		\item Microsoft Visual Studio Code
 		
-		\item PHP
-		\item Laravel
-		\item AdminLTE
+		\item PHP\cite{PHP}
+		\item Laravel\cite{Laravel}
+		\item AdminLTE\cite{AlmsaeedStudio}
+		\item Laravel 5 \textit{Barcode Generator}\cite{Milon}
 		\item JavaScript
 		\item JQuery
 		
@@ -312,8 +314,7 @@ O projeto possuía um conjunto tão alagado de requisitos que para proceder à s
 		\item GitKraken
 		
 		\item \LaTeX
-		\item Overleaf.com
-		\item Microsoft Excel
+		\item Overleaf.com\cite{Overleaf}
 	\end{itemize}
 \end{multicols}
 
